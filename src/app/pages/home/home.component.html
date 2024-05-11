@@ -12,17 +12,15 @@
             Solutions
           </a>
 
-          <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
 
-          <a (click)="showData()" class="home-navlink03 Link dropdown-toggle">More</a>
-          <a *ngIf="clickMore" routerLink="/how-it-works" class="home-navlink02 Link">
+
+          <a routerLink="/how-it-works" class="home-navlink01 Link">
             How it works
           </a>
-          <a *ngIf="clickMore" routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a>
-          <a *ngIf="clickMore" routerLink="/legal" class="home-navlink03 Link">Legal</a>
-          <a routerLink="/get-started" class="home-navlink03 Link">Sign Up</a>
-          <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink03" style="color: #f93">
-            Log In
+
+
+          <a routerLink="/get-started" class="home-navlink03" style="color: #f93">
+            Book a Demo
           </a>
         </div>
         <div id="close-mobile-menu" class="home-close-mobile-menu" (click)="closeMenu()">
@@ -42,50 +40,23 @@
               </a>
             </div>
             <div class="home-links1">
-              <div class=" dropdown">
-                <a routerLink="/solutions" style="text-decoration: none;">
-                  <span routerLink="/solutions" class="home-navlink03 Link nav-link dropdown-toggle"
-                    id="dropdownMenuButton">Solutions</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" routerLink="/inventory"><b>Material Management</b></a>
-                  </li>
-                  <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management</b></a></li>
-                  <li><a class="dropdown-item" routerLink="/labour"><b>Labour Management</b></a></li>
-
-                  <li><a class="dropdown-item" routerLink="/daily-reports"><b>Daily Reports</b></a>
-                  </li>
-
-                  <li><a class="dropdown-item" routerLink="/payment-handling"><b>Payment
-                        Handling</b></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- <a routerLink="/how-it-works" class="home-navlink02 Link">
+              <a routerLink="/solutions" class="home-navlink02 Link">
+                Solutions
+              </a>
+              <a routerLink="/how-it-works" class="home-navlink02 Link">
                 How it works
-              </a> -->
-              <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+              </a>
+
               <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
 
-              <div class=" dropdown">
-                <a class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton1">
-                  <span>More</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/how-it-works"><b>How it
-                        Works</b></a></li>
-                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/tutorials"><b>Tutorials</b></a></li>
-                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/legal"><b>Legal</b></a></li>
-                </ul>
-              </div>
+
 
             </div>
           </div>
           <div class="home-right">
-            <a routerLink="/get-started" class="home-sign-in Link">Sign Up</a>
-            <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink04">
+            <a routerLink="/get-started" class="home-navlink04">
               <div class="home-get-started">
-                <span class="home-text03">Log In</span>
+                <span class="home-text03">Book a Demo</span>
               </div>
             </a>
             <a id="open-mobile-menu" class="home-burger-menu" (click)="openMenu()">
@@ -97,10 +68,8 @@
 
     </div>
     <header class="home-header">
-      <h1 class="home-text04" style="color: black!important;">Construct. Manage. Thrive</h1>
+      <h1 class="home-text04" style="color: black!important;">Automate. Streamline. Empower.</h1>
 
-      <p class="home-text05" style="color: black!important;"><b>Trusted by Contractors, PMCs, and Project Managers</b>
-      </p>
       <a routerLink="/solutions" class="home-navlink05">
         <div class="home-get-started1">
           <span class="home-text06">See Solutions</span>
@@ -109,23 +78,27 @@
     </header>
     <div class="home-dashboard-preview">
       <div class="home-outline">
-        <img alt="pastedImage" src="/assets/pastedimage-cdo-1200h.png" loading="lazy" class="home-image1" />
+        <img alt="pastedImage" src="/assets/first.png" loading="lazy" class="home-image1"
+          style="border-radius: 50px;" />
       </div>
     </div>
   </section>
   <section class="home-features">
     <div class="home-title">
       <span class="home-text07">
-        <span>Build Smarter with Nirmaan360</span>
+        <span>Manage Smarter with Nirmaan Law
+        </span>
         <br />
       </span>
       <span class="home-text10">
         <span>
-          Construction Management needs in one easy and affordable tool.
+          Advocate Management needs in one easy and affordable tool.
+
           <span [innerHTML]="rawudih"></span>
         </span>
         <br />
-        <span>Collaborate with everyone in real-time.</span>
+        <span>Collaborate with your company in real-time.
+        </span>
       </span>
     </div>
     <!-- <div class="container">
@@ -337,21 +310,22 @@
       <div class="home-container4">
         <div class="card">
           <img alt="pastedImage" src="/assets/pastedimage-fii6m-200h.png" class="home-icon2" />
-          <span class="home-text14"> Optimize
+          <span class="home-text14"> Manage
           </span>
           <span class="home-text15">
-            Nirmaan360 optimizes inventory management by tracking materials in real-time, ensuring projects have the
-            right supplies at the right time.
+            Nirmaan Law efficiently manages client relationships, storing client information securely and providing easy
+            access for legal professionals.
 
           </span>
         </div>
         <div class="card ">
           <img alt="pastedImage" src="/assets/pastedimage-l6p-200h.png" class="home-icon4" />
-          <span class="home-text18">Coordinate
+          <span class="home-text18">Track
           </span>
           <span class="home-text19">
-            It coordinates labor attendance and payroll seamlessly, streamlining daily wage processes and ensuring
-            accurate records.
+            It tracks case progress and assigns lawyers, ensuring cases are handled promptly and by the appropriate
+            legal team.
+
 
           </span>
         </div>
@@ -363,11 +337,11 @@
           </div>
 
           <!-- <img alt="pastedImage" src="/assets/pastedimage-l6p-200h.png" class="home-icon4" /> -->
-          <span class="home-text18">Streamline
+          <span class="home-text18">Handle
           </span>
           <span class="home-text19">
-            With Nirmaan360, task assignment becomes simple, allowing project managers to allocate tasks efficiently and
-            track progress effortlessly.
+            Appointment handling is simplified with Nirmaan Law, enabling easy scheduling and reminders for clients and
+            lawyers.
 
 
           </span>
@@ -379,15 +353,15 @@
 
           <div class="home-icon4">
             <span class="material-symbols-outlined" style="font-size: 35px;">
-              credit_card_gear
+              account_tree
             </span>
           </div>
 
-          <span class="home-text16">Manage
+          <span class="home-text16">Organize
           </span>
           <span class="home-text17">
-            Vendor payments are easily managed with Nirmaan360, ensuring timely and accurate payments with precise
-            barter all while maintaining healthy vendor relationships.
+            Task management is streamlined, allowing legal teams to organize their workload effectively and meet
+            deadlines.
 
           </span>
         </div>
@@ -397,25 +371,25 @@
               lab_profile
             </span>
           </div>
-          <span class="home-text20">Report
+          <span class="home-text20">Manage
           </span>
           <span class="home-text21">
-            Daily progress reporting is made easy, allowing teams to report progress efficiently and keep stakeholders
-            and clients informed.
+            Nirmaan Law handles HR and payroll tasks, processes and ensuring compliance with legal requirements.
+
 
           </span>
         </div>
         <div class="card">
           <div class="home-icon4">
             <span class="material-symbols-outlined" style="font-size: 35px;">
-              account_tree
+              calendar_clock
             </span>
           </div>
-          <span class="home-text20">Organize
+          <span class="home-text20">Track
           </span>
           <span class="home-text21">
-            Become a pro in organizing your plans, making it easy to access and update drawings, ensuring everyone is
-            working from the latest plans.
+            Attendance and leave management are tracked accurately, providing insights into employee availability and
+            ensuring smooth operations within the firm.
           </span>
         </div>
       </div>
@@ -425,7 +399,8 @@
   <section class="home-statistics">
     <div class="home-container6">
       <active-users Caption="— Success Rate" Statistic="95%"></active-users>
-      <active-users Caption="— Accident-free work hours" Statistic="500K"></active-users>
+      <active-users Caption="— Negligence Free work hours.
+      " Statistic="500K"></active-users>
       <active-users Caption="— Cost Savings" Statistic="15%"></active-users>
       <active-users Caption="— less environmental impact" Statistic="20%"></active-users>
     </div>
@@ -438,13 +413,15 @@
             Project and Personnel Management
           </span>
           <span class="home-text23 title">
-            Manage all projects and people at one place.
+            Manage all cases and people at one place.
+
           </span>
           <span class="home-text24">
-            Create unlimited projects and collaborate with project stakeholders
-            to seamlessly run the job site. 
+            Efficiently Track unlimited cases and collaborate with legal teams and clients to efficiently manage legal
+            proceedings.
+
           </span>
-          <a routerLink="/pricing" class="home-navlink06">
+          <a routerLink="/get-started" class="home-navlink06">
             <div class="home-get-started2 template-button">
               <span class="home-text25">Get started</span>
             </div>
@@ -466,19 +443,21 @@
         </div>
         <div class="home-left1">
           <span class="home-text26 sub-title">
-            Daily Reporting and Site Metrics
+
+            Daily Correspondence and Case Analytics.
+
           </span>
-          <h2 class="home-text27 title">
-            Advanced analytics, easy to understand.
+          <h2 class="home-text27 title">Advanced insights, user-friendly.
+
+
           </h2>
           <div class="home-category">
-            <span class="home-text28">Power reports</span>
+
             <span class="home-text29">
-              Detail the actions that happened in whole day. Site Intellingence
-              on your fingertips. 
+              Detail all case activities throughout the day. Legal Intelligence at your fingertips.
             </span>
           </div>
-          <a routerLink="/pricing" class="home-navlink09">
+          <a routerLink="/get-started" class="home-navlink09">
             <div class="home-get-started3 template-button">
               <span class="home-text30">Get started</span>
             </div>
@@ -490,17 +469,19 @@
     <div class="home-banner">
       <div class="home-container8">
         <div class="home-left2">
-          <span class="home-text31">
-            Task Management and Project Scheduling
+          <span class="home-text31">Task Management and Appointment Scheduling
+
           </span>
-          <h2 class="home-text32 title">
-            Powerful task management that saves time.
+          <h2 class="home-text32 title">Powerful task management that saves time.
+
           </h2>
           <span class="home-text33">
-            Assign, manage, and review tasks assigned to team members. Schedule
-            activities ahead of time to leapfrog your competitors.
+
+            Assign, manage, and review tasks assigned to team members. Schedule appointment ahead of time to leapfrog
+            your competitors.
+
           </span>
-          <a routerLink="/pricing" class="home-navlink10">
+          <a routerLink="/get-started" class="home-navlink10">
             <div class="home-get-started4 template-button">
               <span class="home-text34">Get started</span>
             </div>
@@ -520,22 +501,21 @@
         </div>
         <div class="home-left1">
           <span class="home-text26 sub-title">
-            Inventory Management and Payments Tracking
+            HR, Payroll, and Leave Handling
+
 
           </span>
           <h2 class="home-text27 title">
-            Material and Money Mastery with a click.
+            Automate Human Resource Management very simply
 
           </h2>
           <div class="home-category">
             <span class="home-text29">
-              Streamline material tracking and vendor payments with our Inventory Oversight and Financial Tracking
-              functionalities.
-
-
+              Efficiently handle HR, payroll, and leave management tasks within your law firm. Streamline employee
+              management while ensuring smooth operations.
             </span>
           </div>
-          <a routerLink="/pricing" class="home-navlink09">
+          <a routerLink="/get-started" class="home-navlink09">
             <div class="home-get-started3 template-button">
               <span class="home-text30">Get started</span>
             </div>
@@ -548,14 +528,14 @@
   <section class="home-action-bar">
     <div class="home-action">
       <div class="home-heading">
-        <span class="home-text35 title">Get an edge with Nirmaan360</span>
+        <span class="home-text35 title">Get an edge with Nirmaan Law.</span>
         <span class="home-text36">
-          Try our free demo by clicking the button below
+          Book our free demo by clicking the button below
         </span>
-        <a routerLink="/pricing" class="home-navlink11">
+        <a routerLink="/get-started" class="home-navlink11">
           <div class="home-get-started5 template-button">
             <span class="home-text37">
-              <span>Start free</span>
+              <span>Book now</span>
               <br />
             </span>
           </div>

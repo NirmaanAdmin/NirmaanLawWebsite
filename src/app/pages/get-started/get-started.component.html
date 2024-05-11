@@ -12,17 +12,15 @@
             Solutions
           </a>
 
-          <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
 
-          <a (click)="showData()" class="home-navlink03 Link dropdown-toggle">More</a>
-          <a *ngIf="clickMore" routerLink="/how-it-works" class="home-navlink02 Link">
+
+          <a routerLink="/how-it-works" class="home-navlink01 Link">
             How it works
           </a>
-          <a *ngIf="clickMore" routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a>
-          <a *ngIf="clickMore" routerLink="/legal" class="home-navlink03 Link">Legal</a>
-          <a routerLink="/get-started" class="home-navlink03 Link">Sign Up</a>
-          <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink03" style="color: #f93">
-            Log In
+
+
+          <a routerLink="/get-started" class="home-navlink03" style="color: #f93">
+            Book a Demo
           </a>
         </div>
         <div id="close-mobile-menu" class="home-close-mobile-menu" (click)="closeMenu()">
@@ -42,50 +40,25 @@
               </a>
             </div>
             <div class="home-links1">
-              <div class=" dropdown">
-                <a routerLink="/solutions" style="text-decoration: none;">
-                  <span routerLink="/solutions" class="home-navlink03 Link nav-link dropdown-toggle"
-                    id="dropdownMenuButton">Solutions</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" routerLink="/inventory"><b>Material Management</b></a>
-                  </li>
-                  <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management</b></a></li>
-                  <li><a class="dropdown-item" routerLink="/labour"><b>Labour Management</b></a></li>
-
-                  <li><a class="dropdown-item" routerLink="/daily-reports"><b>Daily Reports</b></a>
-                  </li>
-
-                  <li><a class="dropdown-item" routerLink="/payment-handling"><b>Payment
-                        Handling</b></a>
-                  </li>
-                </ul>
-              </div>
+              <a routerLink="/solutions" class="home-navlink02 Link">
+                Solutions
+              </a>
               <!-- <a routerLink="/how-it-works" class="home-navlink02 Link">
                 How it works
               </a> -->
-              <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+
               <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
 
-              <div class=" dropdown">
-                <a class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton1">
-                  <span>More</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/how-it-works"><b>How it
-                        Works</b></a></li>
-                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/tutorials"><b>Tutorials</b></a></li>
-                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/legal"><b>Legal</b></a></li>
-                </ul>
-              </div>
+              <a routerLink="/how-it-works" class="home-navlink02 Link">
+                How it works
+              </a>
 
             </div>
           </div>
           <div class="home-right">
-            <a routerLink="/get-started" class="home-sign-in Link">Sign Up</a>
-            <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink04">
+            <a routerLink="/get-started" class="home-navlink04">
               <div class="home-get-started">
-                <span class="home-text03">Log In</span>
+                <span class="home-text03">Book a Demo</span>
               </div>
             </a>
             <a id="open-mobile-menu" class="home-burger-menu" (click)="openMenu()">

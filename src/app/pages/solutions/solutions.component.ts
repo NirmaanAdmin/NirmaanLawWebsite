@@ -38,7 +38,7 @@ export class Solutions {
   @Input()
   text5: string = 'Pricing'
   @Input()
-  text6: string = 'Log In'
+  text6: string = 'Book a Demo'
   @Input()
   Mobile_Menu_Button_src: string = '/pastedimage-yxbd.svg'
   @Input()
