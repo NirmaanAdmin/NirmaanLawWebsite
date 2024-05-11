@@ -1,0 +1,449 @@
+<div class="home-container">
+  <div class="solutions-banner-advanced-analytics">
+    <div class="home-menu">
+      <div id="mobile-menu" class="home-mobile-navigation" [style]="'transform : translateX('+isActive+'%);'">
+        <a routerLink="/" class="home-navlink">
+          <h1 style="color: #f93">Nirmaan 360</h1>
+        </a>
+
+        <div class="home-links">
+
+          <a routerLink="/solutions" class="home-navlink01 Link">
+            Solutions
+          </a>
+
+          <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+
+          <a (click)="showData()" class="home-navlink03 Link dropdown-toggle">More</a>
+          <a *ngIf="clickMore" routerLink="/how-it-works" class="home-navlink02 Link">
+            How it works
+          </a>
+          <a *ngIf="clickMore" routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a>
+          <a *ngIf="clickMore" routerLink="/legal" class="home-navlink03 Link">Legal</a>
+          <a routerLink="/get-started" class="home-navlink03 Link">Sign Up</a>
+          <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink03" style="color: #f93">
+            Log In
+          </a>
+        </div>
+        <div id="close-mobile-menu" class="home-close-mobile-menu" (click)="closeMenu()">
+          <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+            <path
+              d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <div class="home-desktop-navigation">
+        <nav class="home-centered">
+          <div class="home-left">
+            <div class="home-container1">
+              <a routerLink="/" class="home-navlink">
+                <img alt="image" src="/assets/nirmaan%20360caviar%20dreams%20white-01-200h1.png" class="home-image" />
+              </a>
+            </div>
+            <div class="home-links1">
+              <div class=" dropdown">
+                <a routerLink="/solutions" style="text-decoration: none;">
+                  <span routerLink="/solutions" class="home-navlink03 Link nav-link dropdown-toggle"
+                    id="dropdownMenuButton">Solutions</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" routerLink="/inventory"><b>Material Management</b></a>
+                  </li>
+                  <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management</b></a></li>
+                  <li><a class="dropdown-item" routerLink="/labour"><b>Labour Management</b></a></li>
+
+                  <li><a class="dropdown-item" routerLink="/daily-reports"><b>Daily Reports</b></a>
+                  </li>
+
+                  <li><a class="dropdown-item" routerLink="/payment-handling"><b>Payment
+                        Handling</b></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <a routerLink="/how-it-works" class="home-navlink02 Link">
+                How it works
+              </a> -->
+              <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+              <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
+
+              <div class=" dropdown">
+                <a class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton1">
+                  <span>More</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/how-it-works"><b>How it
+                        Works</b></a></li>
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/tutorials"><b>Tutorials</b></a></li>
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/legal"><b>Legal</b></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="home-right">
+            <a routerLink="/get-started" class="home-sign-in Link">Sign Up</a>
+            <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink04">
+              <div class="home-get-started">
+                <span class="home-text03">Log In</span>
+              </div>
+            </a>
+            <a id="open-mobile-menu" class="home-burger-menu" (click)="openMenu()">
+              <img alt="pastedImage" src="/assets/pastedimage-yxbd.svg" class="home-mobile-menu-button" />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+    <section class="solutions-hero">
+      <header class="solutions-header">
+        <h1 class="solutions-text01">Solutions</h1>
+        <p class="solutions-text02">
+          Revolutionize your construction business with Nirmaan360
+        </p>
+      </header>
+    </section>
+  </div>
+  <div class="solutions-banner">
+    <h1 class="solutions-text04 fs-3">In construction industry, fragmented communication, inefficient resource
+      management,
+      poor document handling, lack of real-time insights, and limited collaboration lead to delays and cost overruns.
+    </h1>
+    <span class="solutions-text04">
+      <span class="solutions-text05">
+        Nirmaan360 offers centralized communication, efficient resource tracking, document management, real-time
+        insights, and enhanced collaboration. It streamlines project management, including tasks tracking, labour
+        payroll, daily progress reporting, and inventory management. This ensures timely completion and cost control by
+        optimizing workflows and providing a single platform for all project needs.
+      </span>
+      <span><span [innerHTML]="rawitjn"></span></span>
+      <span><span [innerHTML]="rawhrak"></span></span>
+    </span>
+    <a routerLink="/get-started" class="solutions-navlink5 button">
+      Try the Product
+    </a>
+  </div>
+  <div class="home-banner-advanced-analytics" id="inventory">
+    <div class="home-centered-container">
+      <div class="home-image-container">
+        <a routerLink="/solutions" class="home-navlink08">
+          <img alt="pastedImage" src="/assets/inventory1.png" class="home-cards-image1" />
+        </a>
+      </div>
+      <div class="home-left1">
+        <span class="home-text26 sub-title">
+          <a routerLink="/inventory" style="text-decoration: none;">Inventory</a>
+        </span>
+        <h2 class="home-text27 title">
+          Real-time visibility into material availability
+        </h2>
+
+        <span class="solutions-text10">
+          Gain insights into material consumption patterns to make informed purchasing decisions and avoid overstocking.
+          Mitigate risks of delays and disruptions.
+          <br>
+          <br>
+          <a routerLink="/inventory" style="text-decoration: none; display: flex; align-items: center;">
+            <span style="margin-right: 5px;">Read more</span>
+            <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
+          </a>
+
+        </span>
+
+      </div>
+    </div>
+  </div>
+  <div class="home-banner" id="payments">
+    <div class="home-container8">
+      <div class="home-left2">
+        <span class="home-text31">
+          <a routerLink="/payment-handling" style="text-decoration: none;">Payments</a>
+        </span>
+        <h2 class="home-text32 title">
+          Manage vendor payables and receivables easily.
+        </h2>
+        <span class="solutions-text10">
+          Efficiently track payments, allocate barter, and set reminders based on due dates for streamlined
+          financial management.
+          <br>
+          <br>
+          <a routerLink="/payment-handling" style="text-decoration: none; display: flex; align-items: center;">
+            <span style="margin-right: 5px;">Read more</span>
+            <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
+          </a>
+
+        </span>
+
+      </div>
+      <div class="home-image-container2">
+        <img alt="pastedImage" src="/assets/payment1.png" class="home-cards-image2" />
+      </div>
+    </div>
+  </div>
+  <div class="home-banner-advanced-analytics" id="labour">
+    <div class="home-centered-container">
+      <div class="home-image-container">
+        <a routerLink="/solutions" class="home-navlink08">
+          <img alt="pastedImage" src="/assets/labour1.png" class="home-cards-image1" />
+        </a>
+      </div>
+      <div class="home-left1">
+        <span class="home-text26 sub-title">
+          <a routerLink="/labour" style="text-decoration: none;">Labour</a>
+        </span>
+        <h2 class="home-text27 title">
+          Manage labour attendance, allowances, and overtime simply.
+        </h2>
+
+        <span class="solutions-text10">
+          Easily track labor attendance and streamline payment processes, ensuring fair compensation, accurate payroll,
+          project cost control, and project efficiency.
+          <br>
+          <br>
+          <a routerLink="/labour" style="text-decoration: none; display: flex; align-items: center;">
+            <span style="margin-right: 5px;">Read more</span>
+            <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
+          </a>
+
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="home-banner" id="manage-tasks">
+    <div class="home-container8">
+      <div class="home-left2">
+        <span class="home-text31">
+          <a routerLink="/tasks" style="text-decoration: none;">Task Management</a>
+        </span>
+        <h2 class="home-text32 title">
+          Assign tasks, set deadlines, and track progress
+        </h2>
+        <span class="solutions-text10">
+          View and manage all your tasks from one location, with the ability
+          to filter and sort tasks by assignee, due date, status, or other
+          criteria.
+          <br>
+          <br>
+          <a routerLink="/tasks" style="text-decoration: none; display: flex; align-items: center;">
+            <span style="margin-right: 5px;">Read more</span>
+            <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
+          </a>
+        </span>
+
+      </div>
+      <div class="home-image-container2">
+        <img alt="pastedImage" src="/assets/logos/task-assign-vector-390714731-600h.jpg" class="home-cards-image2" />
+      </div>
+    </div>
+  </div>
+  <div class="home-banner-advanced-analytics" id="daily-reports">
+    <div class="home-centered-container">
+      <div class="home-image-container">
+        <a routerLink="/solutions" class="home-navlink08">
+          <img alt="pastedImage" src="/assets/daily-reports2.png" class="home-cards-image1" />
+        </a>
+      </div>
+      <div class="home-left1">
+        <span class="home-text26 sub-title">
+          <a routerLink="/daily-reports" style="text-decoration: none;">Daily Reports</a>
+        </span>
+        <h2 class="home-text27 title">
+          Keep track of progress on your construction project
+        </h2>
+
+        <span class="solutions-text10">
+          A single point of truth for your team, clients, and subcontractors.
+          Track, Analyze, and Filter everything on a jobsite like weather,
+          manpower, equipment, deliveries, etc.
+          <br>
+          <br>
+          <a routerLink="/daily-reports" style="text-decoration: none; display: flex; align-items: center;">
+            <span style="margin-right: 5px;">Read more</span>
+            <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="home-banner" id="enquiries">
+    <div class="home-container8">
+      <div class="home-left2">
+        <span class="home-text31">
+          Enquiries
+        </span>
+        <h2 class="home-text32 title">
+          Manage leads, schedule follow-up reminders.
+        </h2>
+        <span class="solutions-text10">
+          Capture potential leads interested in property purchase and schedule follow-up reminders for effective
+          lead management.
+        </span>
+
+      </div>
+      <div class="home-image-container2">
+        <img alt="pastedImage" src="/assets/search1.png" class="home-cards-image2" />
+      </div>
+    </div>
+  </div>
+  <div class="home-banner-advanced-analytics" id="project-files">
+    <div class="home-centered-container">
+      <div class="home-image-container">
+        <a routerLink="/solutions" class="home-navlink08">
+          <img alt="pastedImage" src="/assets/logos/office-document-file-folders-vector-600h.jpg"
+            class="home-cards-image1" /> </a>
+      </div>
+      <div class="home-left1">
+        <span class="home-text26 sub-title">
+          Project Files
+        </span>
+        <h2 class="home-text27 title">
+          Access documents you need from anywhere, anytime
+        </h2>
+
+        <span class="solutions-text10">
+          No more struggling to keep track of files across multiple platforms or sifting through cluttered file
+          cabinets. With just a few clicks, you can access all your project documents online and even search for
+          specific files with ease.
+
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-banner-advanced-analytics" id="expense">
+    <div class="home-centered-container">
+      <div class="home-image-container">
+        <a routerLink="/solutions" class="home-navlink08">
+          <img alt="pastedImage" src="/assets/budget3.png" class="home-cards-image1" />
+        </a>
+      </div>
+      <div class="home-left1">
+        <span class="home-text26 sub-title">
+          Petty Cash
+        </span>
+        <h2 class="home-text27 title">
+          Take control of your petty cash
+        </h2>
+
+        <span class="solutions-text10">
+          Effortlessly Track Labor, Material, and Tax Expenses - Say Goodbye to Manual Spreadsheets and Hello to
+          Streamlined Expense Management.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="home-banner" id="scheduling">
+    <div class="home-container8">
+      <div class="home-left2">
+        <span class="home-text31">
+          Scheduling
+        </span>
+        <h2 class="home-text32 title">
+          Powerful scheduler that saves you time
+        </h2>
+        <span class="solutions-text10">
+          Bring structure to the entire team with Day-to-day planning and
+          execution. Make certain that nothing falls through the cracks.
+
+        </span>
+
+      </div>
+      <div class="home-image-container2">
+        <img alt="pastedImage"
+          src="/assets/logos/time-schedule-and-business-management-concept-businessman-planning-work-tasks-and-making-schedule-using-calendar-illustration-free-vector-600h.jpg"
+          class="home-cards-image2" />
+      </div>
+    </div>
+  </div>
+
+  <div class="home-banner" id="plans">
+    <div class="home-container8">
+      <div class="home-left2">
+        <span class="home-text31">
+          Plans
+        </span>
+        <h2 class="home-text32 title">
+          Access your project design plans from anywhere, at any time
+        </h2>
+        <span class="solutions-text10">
+          View your plans online and even make annotations and markups in
+          real-time. No more flipping through stacks of paper.
+        </span>
+
+      </div>
+      <div class="home-image-container2">
+        <img alt="pastedImage" src="/assets/logos/continuous-one-line-drawing-engineering-600nw-2166260923-500h.webp"
+          class="home-cards-image2" />
+      </div>
+    </div>
+  </div>
+  <div class="home-banner-advanced-analytics" id="site-photos">
+    <div class="home-centered-container">
+      <div class="home-image-container">
+        <a routerLink="/solutions" class="home-navlink08">
+          <img alt="pastedImage" src="/assets/logos/content_img-1200w.png" class="home-cards-image1" />
+        </a>
+      </div>
+      <div class="home-left1">
+        <span class="home-text26 sub-title">
+          Site Photos
+        </span>
+        <h2 class="home-text27 title">
+          Capture, organize, and share photos of site with ease.
+        </h2>
+
+        <span class="solutions-text10">
+          Take photos of the Construction site using their mobile device or
+          camera, and upload them directly to the software.Easily searchable
+          and accessible to all stakeholders.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="home-banner" id="chats">
+    <div class="home-container8">
+      <div class="home-left2">
+        <span class="home-text31">
+          Chats
+        </span>
+        <h2 class="home-text32 title">
+          Boost collaboration by communicating on our chat tool
+        </h2>
+        <span class="solutions-text10">
+          Stop getting confused between hundreds of whatsapp chats and personalize all your communication under
+          a single project.
+        </span>
+
+      </div>
+      <div class="home-image-container2">
+        <img alt="pastedImage" src="/assets/logos/13071.jpg" class="home-cards-image2" />
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section class="home-action-bar">
+    <div class="home-action">
+      <div class="home-heading">
+        <span class="home-text35 title">Get Started with Nirmaan360</span>
+
+        <span class="solutions-text24">Check out our demo free of cost.</span>
+        <a routerLink="/pricing" class="home-navlink11">
+          <div class="home-get-started5 template-button">
+            <span class="home-text37">
+              <span>Start free</span>
+              <br />
+            </span>
+          </div>
+        </a>
+      </div>
+      <img alt="image" src="/assets/nirmaan%20360caviar%20dreams%20white-01-1200w.png" class="home-image2" />
+      <div class="home-images"></div>
+    </div>
+  </section>
+  <!-- </div> -->
+  <div class="solutions-container8"><app-footer [isHome]="false"></app-footer></div>
+</div>

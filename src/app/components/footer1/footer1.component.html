@@ -1,0 +1,31 @@
+<footer class="footer1-footer" [ngClass]="rootClassName">
+  <div class="footer1-top">
+    <div class="footer1-left">
+      <span class="footer1-text">{{ text1 }}</span>
+      <div class="footer1-subscription">
+        <input
+          type="email"
+          [attr.placeholder]="textinputplaceholder"
+          class="footer1-textinput input"
+        />
+        <div class="footer1-subscribe">
+          <span class="footer1-text01">{{ text3 }}</span>
+        </div>
+      </div>
+      <div class="footer1-contact">
+        <span class="footer1-text02">{{ text2 }}</span>
+        <span class="footer1-text03">
+          <span class="footer1-text04">ask@nirmaan360.com</span>
+          <br />
+          <br />
+          <span>+91-9426255832</span>
+          <br />
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="footer1-bottom">
+    <img [attr.alt]="imagealt" [attr.src]="imagesrc" class="footer1-image" />
+    <span class="footer1-text09">{{ text }}</span>
+  </div>
+</footer>

@@ -1,0 +1,371 @@
+<div class="how-it-works-container">
+    <div class="home-hero">
+        <div class="home-menu">
+            <div id="mobile-menu" class="home-mobile-navigation" [style]="'transform : translateX('+isActive+'%);'">
+                <a routerLink="/" class="home-navlink">
+                    <h1 style="color: #f93">Nirmaan 360</h1>
+                </a>
+
+                <div class="home-links">
+
+                    <a routerLink="/solutions" class="home-navlink01 Link">
+                        Solutions
+                    </a>
+
+                    <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+
+                    <a (click)="showData()" class="home-navlink03 Link dropdown-toggle">More</a>
+                    <a *ngIf="clickMore" routerLink="/how-it-works" class="home-navlink02 Link">
+                        How it works
+                    </a>
+                    <a *ngIf="clickMore" routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a>
+                    <a *ngIf="clickMore" routerLink="/legal" class="home-navlink03 Link">Legal</a>
+                    <a routerLink="/get-started" class="home-navlink03 Link">Sign Up</a>
+                    <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink03" style="color: #f93">
+                        Log In
+                    </a>
+                </div>
+                <div id="close-mobile-menu" class="home-close-mobile-menu" (click)="closeMenu()">
+                    <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                        <path
+                            d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="home-desktop-navigation">
+                <nav class="home-centered">
+                    <div class="home-left">
+                        <div class="home-container1">
+                            <a routerLink="/" class="home-navlink">
+                                <img alt="image" src="/assets/nirmaan%20360caviar%20dreams%20white-01-200h1.png"
+                                    class="home-image" />
+                            </a>
+                        </div>
+                        <div class="home-links1">
+                            <div class=" dropdown">
+                                <a routerLink="/solutions" style="text-decoration: none;">
+                                    <span class="home-navlink03 Link nav-link dropdown-toggle"
+                                        id="dropdownMenuButton">Solutions</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" routerLink="/inventory"><b>Material Management</b></a>
+                                    </li>
+                                    <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management</b></a></li>
+                                    <li><a class="dropdown-item" routerLink="/labour"><b>Labour Management</b></a></li>
+
+                                    <li><a class="dropdown-item" routerLink="/daily-reports"><b>Daily Reports</b></a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" routerLink="/payment-handling"><b>Payment
+                                                Handling</b></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <a routerLink="/how-it-works" class="home-navlink02 Link">
+                        How it works
+                      </a> -->
+                            <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+                            <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
+
+                            <div class=" dropdown">
+                                <a class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton1">
+                                    <span>More</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item pt-2 pb-2" routerLink="/how-it-works"><b>How it
+                                                Works</b></a></li>
+                                    <li><a class="dropdown-item pt-2 pb-2" routerLink="/tutorials"><b>Tutorials</b></a>
+                                    </li>
+                                    <li><a class="dropdown-item pt-2 pb-2" routerLink="/legal"><b>Legal</b></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="home-right">
+                        <a routerLink="/get-started" class="home-sign-in Link">Sign Up</a>
+                        <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink04">
+                            <div class="home-get-started">
+                                <span class="home-text03">Log In</span>
+                            </div>
+                        </a>
+                        <a id="open-mobile-menu" class="home-burger-menu" (click)="openMenu()">
+                            <img alt="pastedImage" src="/assets/pastedimage-yxbd.svg" class="home-mobile-menu-button" />
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <section class="home-header">
+            <header class="how-it-works-header">
+                <h2 style="text-align: center; margin-bottom: 5px;" class="how-it-works-text02"
+                    style="color: black!important;">Daily Progress Reports
+                </h2>
+                <p class="how-it-works-text03" style="color: black!important;">
+                    Develop an intricate record of a project's advancement without depending on memory.
+                </p>
+
+            </header>
+            <a routerLink="/get-started" routerLinkActive="router-link-active" class="home-navlink05">
+                <div class="home-get-started1">
+                    <span class="home-text06">Let's Get Started !</span>
+                </div>
+            </a>
+            <br>
+            <!-- <iframe width="100%" height="256" src="https://www.youtube.com/embed/2NKVEAcV-DE?si=T9aeg3j1pphAl5Ww"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+
+        </section>
+    </div>
+    <div class="how-it-works-features" id="tutorial" style="padding-top:20px; padding-bottom: 40px;">
+        <img src="../../../assets/daily_prev_ui1.png" width="100%">
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            engineering
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Workforce Tracking</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Easily record and monitor daily
+                                workforce activities, including hours
+                                worked, tasks completed, and
+                                attendance, providing real-time
+                                insights into labor productivity.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            handyman
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Equipment Monitoring</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Monitor the usage of
+                                construction equipment, track
+                                equipment locations, hours of
+                                operation, optimizing equipment
+                                utilization and downtime.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            calendar_clock
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Delay Tracking</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Identify and document delays in
+                                construction projects, recording
+                                reasons for delays and their impact
+                                on timelines, facilitating proactive
+                                measures to mitigate delays and
+                                keep projects on schedule.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            list_alt
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Inspections Management</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Record daily inspections and
+                                quality control checks, document
+                                any issues or discrepancies found
+                                on-site, ensure compliance with
+                                safety regulations, and maintain
+                                high construction standards.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            partly_cloudy_day
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Weather Reporting</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Record real-time weather updates, allowing project managers to plan activities
+                                effectively and mitigate weather-related delays.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            local_shipping
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Delivery Log</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Maintain a detailed log of incoming and outgoing deliveries, tracking materials and
+                                supplies to ensure timely availability for construction tasks.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            groups
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Visitors Record</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Record and manage visitor details entering the construction site, enhancing security and
+                                providing insights into site traffic for safety and accountability.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            call_log
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Call Log Info</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Log and track all incoming and outgoing calls related to the project, ensuring clear
+                                communication and easy reference for follow-ups and issue resolution.
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            calendar_clock
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Safety Violation Check</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Conduct regular safety checks and report any violations or hazards observed on-site,
+                                prioritizing worker safety and compliance with regulations.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-4">
+                <div class="row" style="margin-left: 5px;">
+                    <div class="col-1 pr-0" style="padding-top: 8px; padding-right: 0px; ">
+                        <span class="material-symbols-outlined" style="float: right; font-size: 30px;">
+                            delete_sweep
+                        </span>
+                    </div>
+                    <div class=" col-11">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><b>Wastage Tracking</b></h2>
+                            </div>
+                            <div class="col-12">
+                                Monitor and analyze material wastage on-site, identifying areas for improvement and
+                                optimizing resource utilization to reduce costs and environmental impact.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <app-footer [isHome]="false"></app-footer>
+</div>

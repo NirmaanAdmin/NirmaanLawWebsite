@@ -1,0 +1,69 @@
+<footer class="footer-footer">
+  <div class="footer-top">
+    <div class="footer-left">
+      <span class="footer-text">{{ text1 }}</span>
+      <div class="footer-subscription">
+        <input type="email" [attr.placeholder]="textinput_placeholder" class="footer-textinput input" />
+        <div class="footer-subscribe">
+          <span class="footer-text1">{{ text5 }}</span>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <span class="footer-text2">{{ text2 }}</span>
+        <a href="mailto:use@active-app.com?subject=Support" class="footer-link">
+          {{ text3 }}
+        </a>
+        <!-- <br> -->
+        <a href="mailto:use@active-app.com?subject=Support" class="footer-link1">
+          {{ text31 }}
+        </a>
+        <br>
+        <span class="footer-navlink">Shivam Monreve PRL colony, Sindhu Bhavan Rd, Bodakdev, Ahmedabad 380054</span>
+
+
+        <br>
+
+        <p style=" color: white ; margin-bottom: 2px;">
+
+          <a href="https://linkedin.com/company/nirmaan360/"
+            style="text-decoration: none; color: white; padding-right: 10px;"> <img
+              src="../../../assets/icons8-linkedin-48.png" style="margin-bottom: 4px; display: inline;" width="20px"
+              height="20px">
+            LinkedIn</a>
+
+          <a href="https://www.youtube.com/@Nirmaan360-ConstructionTech" style="text-decoration: none;color: white;">
+            <img src="../../../assets/youtube.png" style="margin-bottom: 4px; display: inline;" width="25px"
+              height="28px">
+            YouTube </a>
+        </p>
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-category">
+        <span class="footer-text3">{{ text4 }}</span>
+        <div class="footer-links">
+          <a routerLink="/solutions" class="footer-navlink">{{ text6 }}</a>
+          <a routerLink="/how-it-works" class="footer-navlink1">{{ text61 }}</a>
+          <a routerLink="/pricing" class="footer-navlink2">{{ text612 }}</a>
+          <a routerLink="/legal" class="footer-navlink2">Legal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <a class="footer-navlink3" routerLink="/" *ngIf="isHome==false">
+      <img [attr.alt]="image_alt" [attr.src]="image_src" class="footer-image" />
+    </a>
+    <a class="footer-navlink3" routerLink="/" *ngIf="isHome==true" (click)="callInitOfHome()">
+      <img [attr.alt]="image_alt" [attr.src]="image_src" class="footer-image" />
+    </a>
+    <span class="footer-text4">{{ text }}</span>
+  </div>
+</footer>

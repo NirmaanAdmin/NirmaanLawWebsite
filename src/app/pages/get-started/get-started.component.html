@@ -1,0 +1,220 @@
+<div class="home-container">
+  <div class="home-hero">
+    <div class="home-menu">
+      <div id="mobile-menu" class="home-mobile-navigation" [style]="'transform : translateX('+isActive+'%);'">
+        <a routerLink="/" class="home-navlink">
+          <h1 style="color: #f93">Nirmaan 360</h1>
+        </a>
+
+        <div class="home-links">
+
+          <a routerLink="/solutions" class="home-navlink01 Link">
+            Solutions
+          </a>
+
+          <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+
+          <a (click)="showData()" class="home-navlink03 Link dropdown-toggle">More</a>
+          <a *ngIf="clickMore" routerLink="/how-it-works" class="home-navlink02 Link">
+            How it works
+          </a>
+          <a *ngIf="clickMore" routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a>
+          <a *ngIf="clickMore" routerLink="/legal" class="home-navlink03 Link">Legal</a>
+          <a routerLink="/get-started" class="home-navlink03 Link">Sign Up</a>
+          <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink03" style="color: #f93">
+            Log In
+          </a>
+        </div>
+        <div id="close-mobile-menu" class="home-close-mobile-menu" (click)="closeMenu()">
+          <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+            <path
+              d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <div class="home-desktop-navigation">
+        <nav class="home-centered">
+          <div class="home-left">
+            <div class="home-container1">
+              <a routerLink="/" class="home-navlink">
+                <img alt="image" src="/assets/nirmaan%20360caviar%20dreams%20white-01-200h1.png" class="home-image" />
+              </a>
+            </div>
+            <div class="home-links1">
+              <div class=" dropdown">
+                <a routerLink="/solutions" style="text-decoration: none;">
+                  <span routerLink="/solutions" class="home-navlink03 Link nav-link dropdown-toggle"
+                    id="dropdownMenuButton">Solutions</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" routerLink="/inventory"><b>Material Management</b></a>
+                  </li>
+                  <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management</b></a></li>
+                  <li><a class="dropdown-item" routerLink="/labour"><b>Labour Management</b></a></li>
+
+                  <li><a class="dropdown-item" routerLink="/daily-reports"><b>Daily Reports</b></a>
+                  </li>
+
+                  <li><a class="dropdown-item" routerLink="/payment-handling"><b>Payment
+                        Handling</b></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <a routerLink="/how-it-works" class="home-navlink02 Link">
+                How it works
+              </a> -->
+              <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+              <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
+
+              <div class=" dropdown">
+                <a class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton1">
+                  <span>More</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/how-it-works"><b>How it
+                        Works</b></a></li>
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/tutorials"><b>Tutorials</b></a></li>
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/legal"><b>Legal</b></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="home-right">
+            <a routerLink="/get-started" class="home-sign-in Link">Sign Up</a>
+            <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink04">
+              <div class="home-get-started">
+                <span class="home-text03">Log In</span>
+              </div>
+            </a>
+            <a id="open-mobile-menu" class="home-burger-menu" (click)="openMenu()">
+              <img alt="pastedImage" src="/assets/pastedimage-yxbd.svg" class="home-mobile-menu-button" />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+    <section class="get-started-hero">
+      <header class="get-started-header">
+        <h1 class="get-started-text02">Get Started</h1>
+        <p class="get-started-text03">
+          <span>
+            Simply fill the form below.
+            <span [innerHTML]="rawxxpf"></span>
+          </span>
+          <br />
+          <span>No payment information required.</span>
+        </p>
+      </header>
+
+      <!-- <button class="primary" onclick=" ">Open Dialog</button> -->
+
+      <dialog #cdialog>
+        <h2 style="text-align: center !important;">Congratulations!</h2>
+        <p style="text-align: center !important;">You have Successfully Registered for Nirmaan360.</p>
+        <p style="text-align: center !important;"><b>Please Check your email for Login Credential.</b></p>
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center;
+      ">
+          <button
+            style="align-items: center !important;color: black; background: #ff9933; padding: 15px; padding-left: 30px; padding-right: 30px; border-radius: 15px; margin-top: 5px; margin-bottom: 10px; "
+            (click)="closeDialog()">Close</button>
+        </div>
+
+      </dialog>
+
+      <form class="get-started-form">
+        <div class="form__group field">
+          <input type="input" class="form__field" [(ngModel)]="firstName" placeholder="First Name*" name="First Name"
+            id='First Name*' required />
+          <label for="First Name*" class="form__label">First Name*</label>
+        </div>
+        <div class="form__group field">
+          <input type="input" class="form__field" [(ngModel)]="lastName" placeholder="Last Name" name="Last Name"
+            id='Last Name' />
+          <label for="Last Name" class="form__label">Last Name</label>
+        </div>
+
+        <div class="form__group field">
+          <input type="input" class="form__field" [(ngModel)]="emailAddress" placeholder="Email Address*"
+            name="Email Address*" id='Email Address*' required />
+          <label for="Email Address*" class="form__label">Email Address*</label>
+        </div>
+        <div class="form__group field">
+          <input type="input" class="form__field" [(ngModel)]="phoneNumber" placeholder="Phone Number"
+            name="Phone Number" id='Phone Number' />
+          <label for="Phone Number" class="form__label">Phone Number</label>
+        </div>
+        <div class="form__group field">
+          <input type="input" class="form__field" [(ngModel)]="companyName" placeholder="Company Name"
+            name="Company Name" id='Company Name' required />
+          <label for="Company Name" class="form__label">Company Name*</label>
+        </div>
+        <div class="form__group field">
+          <select required class="form__field" [(ngModel)]="selectedPlan" placeholder="Select Plan" name="dropdown_Plan"
+            id='dropdown_Plan'>
+            <option value="Free">Free Plan</option>
+            <option value="95252D31-1EA3-4DF8-BAC4-A8CD13DA9D83">Semi-Annual Plan</option>
+            <option value="AEE6B77E-6E8B-4455-A5B8-C617F65D969E">Annual Plan</option>
+          </select>
+        </div>
+
+        <div class="form__group field">
+          <button (click)="validateForm()" class="get-started-navlink3" style="padding-top: 20px!important;">
+            <span class="get-started-get-started">
+              <span class="get-started-text01">Experience Nirmaan360</span>
+            </span>
+          </button>
+        </div>
+
+      </form>
+    </section>
+  </div>
+  <section class="home-action-bar">
+    <span class="home-text35 title" style="color:black">Have Questions?</span>
+    <div class="home-action">
+      <div class="home-heading" style="align-items: center;">
+        <span class="home-text35 title">Contact Us @</span>
+        <span class="home-text36">
+          <b>Email</b> :<a style="color: white; text-decoration: none;" href="mailto:use@active-app.com?subject=Support"
+            class="footer-link">
+            ask@nirmaan360.com
+          </a>
+        </span>
+        <span class="home-text36">
+          <b>Phone No.</b> : +91-9426255832
+        </span>
+
+
+      </div>
+
+      <div class="home-heading" style="align-items: center; margin-bottom: 10px;">
+        <span class="home-text35 title">Book a Meeting</span>
+
+        <a href="https://calendly.com/nirmaan360/30min?month=2024-03" class="home-navlink11"
+          style="align-items: center;">
+          <div class="home-get-started5 template-button">
+            <span class="home-text37" style="flex:1; display: flex;">
+
+              <span>Book Now &nbsp;</span>
+              <span class="material-symbols-outlined">
+                east
+              </span>
+
+
+              <!-- <br /> -->
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <app-footer [isHome]="false"></app-footer>
+</div>
+
+<div id="loader-container" *ngIf="isLoading">
+  <div class="loader"></div>
+</div>

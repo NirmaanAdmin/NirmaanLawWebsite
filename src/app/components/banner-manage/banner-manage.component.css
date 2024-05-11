@@ -1,0 +1,91 @@
+:host { 
+  display: contents; 
+}
+.banner-manage-banner-manage {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-sixunits);
+  padding-left: var(--dl-space-space-sevenunits);
+  padding-right: var(--dl-space-space-sevenunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-sixunits);
+  justify-content: center;
+}
+.banner-manage-container {
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.banner-manage-left {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-fourunits);
+  flex-direction: column;
+}
+.banner-manage-text {
+  font-size: 24px;
+}
+.banner-manage-text1 {
+  text-align: left;
+}
+.banner-manage-text2 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.banner-manage-container1 {
+  flex: 0 0 auto;
+  width: 573px;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.banner-manage-image {
+  width: 100%;
+  height: 564px;
+  object-fit: cover;
+}
+@media(max-width: 991px) {
+  .banner-manage-banner-manage {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-threeunits);
+  }
+  .banner-manage-left {
+    margin-right: var(--dl-space-space-threeunits);
+  }
+}
+@media(max-width: 767px) {
+  .banner-manage-banner-manage {
+    padding-top: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .banner-manage-container {
+    flex-direction: column;
+  }
+  .banner-manage-left {
+    margin-right: 0px;
+  }
+  .banner-manage-text1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .banner-manage-text2 {
+    line-height: 24px;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .banner-manage-text2 {
+    line-height: 24px;
+  }
+}

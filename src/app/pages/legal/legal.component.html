@@ -1,0 +1,398 @@
+<div class="home-container">
+    <section class="home-hero">
+        <div class="home-menu">
+            <div id="mobile-menu" class="home-mobile-navigation" [style]="'transform : translateX('+isActive+'%);'">
+                <a routerLink="/" class="home-navlink">
+                    <h1 style="color: #f93">Nirmaan 360</h1>
+                </a>
+
+                <div class="home-links">
+
+                    <a routerLink="/solutions" class="home-navlink01 Link">
+                        Solutions
+                    </a>
+
+                    <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+
+                    <a (click)="showData()" class="home-navlink03 Link dropdown-toggle">More</a>
+                    <a *ngIf="clickMore" routerLink="/how-it-works" class="home-navlink02 Link">
+                        How it works
+                    </a>
+                    <a *ngIf="clickMore" routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a>
+                    <a *ngIf="clickMore" routerLink="/legal" class="home-navlink03 Link">Legal</a>
+                    <a routerLink="/get-started" class="home-navlink03 Link">Sign Up</a>
+                    <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink03" style="color: #f93">
+                        Log In
+                    </a>
+                </div>
+                <div id="close-mobile-menu" class="home-close-mobile-menu" (click)="closeMenu()">
+                    <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                        <path
+                            d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="home-desktop-navigation">
+                <nav class="home-centered">
+                    <div class="home-left">
+                        <div class="home-container1">
+                            <a routerLink="/" class="home-navlink">
+                                <img alt="image" src="/assets/nirmaan%20360caviar%20dreams%20white-01-200h1.png"
+                                    class="home-image" />
+                            </a>
+                        </div>
+                        <div class="home-links1">
+                            <div class=" dropdown">
+                                <a routerLink="/solutions" style="text-decoration: none;">
+                                    <span routerLink="/solutions" class="home-navlink03 Link nav-link dropdown-toggle"
+                                        id="dropdownMenuButton">Solutions</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" routerLink="/inventory"><b>Material Management</b></a>
+                                    </li>
+                                    <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management</b></a></li>
+                                    <li><a class="dropdown-item" routerLink="/labour"><b>Labour Management</b></a></li>
+
+                                    <li><a class="dropdown-item" routerLink="/daily-reports"><b>Daily Reports</b></a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" routerLink="/payment-handling"><b>Payment
+                                                Handling</b></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <a routerLink="/how-it-works" class="home-navlink02 Link">
+                        How it works
+                      </a> -->
+                            <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+                            <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
+
+                            <div class=" dropdown">
+                                <a class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton1">
+                                    <span>More</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item pt-2 pb-2" routerLink="/how-it-works"><b>How it
+                                                Works</b></a></li>
+                                    <li><a class="dropdown-item pt-2 pb-2" routerLink="/tutorials"><b>Tutorials</b></a>
+                                    </li>
+                                    <li><a class="dropdown-item pt-2 pb-2" routerLink="/legal"><b>Legal</b></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="home-right">
+                        <a routerLink="/get-started" class="home-sign-in Link">Sign Up</a>
+                        <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink04">
+                            <div class="home-get-started">
+                                <span class="home-text03">Log In</span>
+                            </div>
+                        </a>
+                        <a id="open-mobile-menu" class="home-burger-menu" (click)="openMenu()">
+                            <img alt="pastedImage" src="/assets/pastedimage-yxbd.svg" class="home-mobile-menu-button" />
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <header style="margin-top: 10vh;">
+            <h1 style="color: black!important; font-size: 30px;">PRIVACY POLICY</h1>
+            <p style="color: black!important;">
+                <br>
+
+                Privacy Policy for Nirmaan360 - Cloud-Based Construction Management Services
+                <br>
+                Effective Date: May 29th, 2023
+                <br>
+                Welcome to Nirmaan360, the cloud-based construction management services provided by Constructo Solutions
+                Private Limited. We are committed to protecting your privacy and ensuring the security of your personal
+                information. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of
+                your information when you use our software and services.
+                <br><br>
+                1. Information We Collect:
+                <br>
+                We collect information necessary for the provision of our cloud-based construction management services.
+                This may include, but is not limited to:
+                <br>
+                - Personal Information: Name, email address, contact information.
+                <br>
+                - Project Data: Construction project details, documents, and related information.
+                <br>
+                - Usage Information: Log data, IP addresses, browser type, device information.
+                <br><br>
+                2. How We Use Your Information:
+                <br>
+                We use the collected information for the following purposes:
+                <br>
+                - Providing and improving our construction management services.
+                <br>
+                - Communicating with you regarding updates, announcements, and support.
+                <br>
+                - Analyzing usage patterns and trends to enhance our platform.
+                <br>
+                - Ensuring the security and integrity of our services.
+                <br><br>
+                3. Data Security:
+                <br>
+                We prioritize the security of your data and have implemented measures to protect it, including
+                encryption and secure protocols. Our database is hosted on Microsoft Azure, a trusted and
+                secure cloud infrastructure provider.
+                <br><br>
+                4. Third-Party Access:
+                <br>
+                We do not share your data with any third-party platforms. Your information is solely used for the
+                purpose of providing and improving our construction management services.
+                <br><br>
+                5. Cookies and Tracking Technologies:
+                <br>
+                We may use cookies and similar tracking technologies to enhance your experience on our platform. You can
+                manage your cookie preferences through your browser settings.
+                <br><br>
+                6. Your Choices:
+                <br>
+                You have the right to access, update, and correct your personal information. If you have any concerns
+                about your data, please contact us at ask@nirmaan360.com
+                <br><br>
+                7. Children's Privacy:
+                <br>
+                Our services are not intended for individuals under the age of 18. We do not knowingly collect personal
+                information from children. If you believe we have unintentionally collected such information, please
+                contact us immediately.
+                <br><br>
+                8. Changes to this Privacy Policy:
+                <br>
+                We may update this Privacy Policy periodically. Please review it regularly to stay informed about how we
+                are protecting your information.
+                <br><br>
+                9. Contact Us:
+                <br>
+                If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at
+                ask@nirmaan360.com
+                <br><br>
+                By using Nirmaan360, you agree to the terms outlined in this Privacy Policy. We appreciate your trust in
+                us and are committed to safeguarding your privacy.
+                <br>
+                <br><br>
+            </p>
+            <h1 style="color: black!important; font-size: 30px;">TERMS AND CONDITIONS</h1>
+            <p style="color: black!important;"><br>Terms and Conditions for Nirmaan360 - Cloud-Based Construction
+                Management
+                <br>
+                Effective Date: May 29th, 2023
+                <br>
+                Welcome to Nirmaan360, the cloud-based construction management services provided by Constructo Solutions
+                Private Limited. Before using our services, please read the following terms and conditions carefully. By
+                accessing or using Nirmaan360, you agree to abide by these terms. If you do not agree with any part of
+                these terms, please do not use our services.
+                <br><br>
+                1. User Agreement:
+                <br>
+                By using Nirmaan360, you affirm that you are at least 18 years old and capable of entering into a
+                binding agreement.
+                <br><br>
+                2. Use of Services:
+                <br>
+                - You may use our construction management services for lawful purposes only.<br>
+                - You are responsible for maintaining the confidentiality of your account credentials.
+                <br><br>
+                3. Intellectual Property:
+                <br>
+                All content and materials provided by Nirmaan360 are the intellectual property of Constructo Solutions
+                Private Limited. You may not reproduce, distribute, or use them without our express written consent.
+                <br><br>
+                4. Data Ownership:
+                <br>
+                While you retain ownership of your project data, by using our services, you grant us a license to use,
+                modify, and display your data for the purpose of providing and improving our services.
+                <br>
+                5. Prohibited Activities:
+                <br>
+                - You agree not to engage in any activities that may disrupt or interfere with the proper functioning of
+                Nirmaan360.
+                <br>
+                - Prohibited activities include, but are not limited to, unauthorized access, data scraping, or any
+                action that may compromise the security of our platform.
+                <br><br>
+                6. Payment and Billing:
+                <br>
+                - If applicable, you agree to pay all fees associated with your use of Nirmaan360 in accordance with our
+                billing terms.
+                <br>
+                - We reserve the right to modify our pricing and billing practices, and such changes will be
+                communicated to you in advance.
+                <br><br>
+                7. Termination of Services:
+                <br>
+                We reserve the right to terminate or suspend your access to Nirmaan360 at our discretion, without prior
+                notice, if we believe you have violated these terms.
+                <br><br>
+                8. Limitation of Liability:
+                <br>
+                Nirmaan360 is provided "as is" without any warranties, expressed or implied. We shall not be liable for
+                any direct, indirect, incidental, consequential, or special damages arising out of or in connection with
+                your use of our services.
+                <br><br>
+                9. Privacy:
+                <br>
+                Your use of Nirmaan360 is also governed by our Privacy Policy. Please review it to understand how we
+                collect, use, and protect your information.
+                <br><br>
+                10. Modification of Terms:
+                <br>
+                We reserve the right to modify these terms at any time. Changes will be effective upon posting on our
+                website. It is your responsibility to review these terms regularly.
+                <br><br>
+                11. Governing Law:
+                <br>
+                These terms and conditions are governed by the laws of Government of India. Any legal action arising out
+                of or related to these terms shall be filed only in the courts located within Your Jurisdiction.
+                <br><br>
+                12. Contact Us:
+                <br>
+                If you have any questions or concerns about these terms and conditions, please contact us at
+                ask@nirmaan360.com
+                <br><br>
+                Thank you for choosing Nirmaan360. We appreciate your compliance with these terms and hope you find our
+                cloud-based construction management services valuable.
+                <br>
+                <br><br>
+            </p>
+            <h1 style="color: black!important; font-size: 30px;">CANCELLATION AND
+                REFUND POLICY</h1>
+            <p style="color: black!important;"><br>Cancellation and Refund Policy for Nirmaan360 - Cloud-Based
+                Construction
+                Management Services
+                <br>
+                Effective Date: May 29th, 2023
+                <br>
+                At Constructo Solutions Private Limited, we strive to provide a seamless experience with our cloud-based
+                construction management services, Nirmaan360. However, we understand that circumstances may arise that
+                require cancellation or refund. Please review our Cancellation and Refund Policy carefully.
+                <br><br>
+                1. Cancellation Policy:
+                <br>
+                • You may cancel your subscription to Nirmaan360 at any time by contacting our customer support at
+                ask@nirmaan360.com
+                <br>
+                - Subscription cancellations will be effective at the end of the current billing cycle.
+                <br><br>
+                2. Refund Policy:
+                <br>
+                - Refunds are only applicable under the following circumstances:
+                <br>
+                a. Technical Issues: If you experience technical issues that prevent you from using Nirmaan360, and our
+                support team is unable to resolve the issue within a reasonable time frame.
+                <br>
+                b. Service Discontinuation: If we discontinue Nirmaan360, and you have an active subscription.
+                <br><br>
+                3. Refund Process:
+                <br>
+                - To request a refund, please contact our customer support at ask@nirmaan360.com
+                within 30 days of the issue.
+                <br>
+                - Refund requests will be reviewed on a case-by-case basis, and a decision will be communicated to you
+                within a reasonable time frame.
+                <br><br>
+
+                4. Refund Limitations:
+                <br>
+                - Refunds are limited to the amount paid for the unused portion of your subscription.
+                <br>
+                - No refunds will be provided for subscription periods that have already elapsed.
+                <br><br>
+                5. Payment Disputes:
+                <br>
+                - Initiating a payment dispute without contacting our customer support may result in the cancellation of
+                your subscription without a refund.
+                <br><br>
+                6. Contact Us:
+                - If you have any questions or concerns about our Cancellation and Refund Policy, please contact us at
+                ask@nirmaan360.com
+                <br><br>
+                Please note that by using Nirmaan360, you agree to comply with this Cancellation and Refund Policy. We
+                reserve the right to modify this policy at any time. Changes will be effective upon posting on our
+                website, and it is your responsibility to review this policy regularly.
+                <br>
+                Thank you for choosing Nirmaan360. We appreciate your understanding and cooperation.
+                <br>
+                <br>
+                <br>
+
+            </p>
+            <h1 style="color: black!important; font-size: 30px;">SHIPPING POLICY</h1>
+            <p style="color: black!important;"><br>Software Shipping Policy for Nirmaan360 - Cloud-Based
+                Construction
+                Management Services
+                <br>
+                Effective Date: May 29th, 2023
+                <br>
+                At Constructo Solutions Private Limited, we want to ensure a clear and transparent experience for our
+                users. Since our services are cloud-based, there is no physical shipment of software. Instead, access to
+                Nirmaan360 is provided electronically. Please review our Software Shipping Policy for details on how you
+                will receive and access our cloud-based construction management services.
+                <br><br>
+                1. Delivery Method:
+                <br>
+                - Nirmaan360 is delivered electronically via email upon successful completion of the registration and
+                subscription process.
+                - Upon subscription, you will receive login credentials and instructions on how to access the platform.
+                <br><br>
+                2. Access Period:
+                <br>
+                - Your access to Nirmaan360 is based on the subscription plan you choose.
+                <br>
+                - Access begins immediately upon successful subscription and continues for the duration of the selected
+                subscription period.
+                <br><br>
+                3. Software Updates:
+                <br>
+                - Updates and improvements to Nirmaan360 are delivered automatically through our cloud infrastructure.
+                <br>
+                - You will be notified of any significant updates or changes to the platform through email or within the
+                platform itself.
+                <br><br>
+                4. Technical Support:
+                <br>
+                - Technical support is available to assist you with any issues you may encounter while using Nirmaan360.
+                <br>
+                • Contact our customer support at ask@nirmaan360.com for assistance.
+                <br><br>
+                5. License and Usage:
+                <br>
+                - By subscribing to Nirmaan360, you are granted a non-exclusive, non-transferable license to use the
+                software for the duration of your subscription period.
+                <br><br>
+                6. Compatibility and System Requirements:
+                <br>
+                - Ensure that your devices meet the system requirements for accessing Nirmaan360. Information on system
+                requirements is available on our website.
+                <br><br>
+                7. Refund Policy:
+                <br>
+                - Our refund policy is outlined separately in our Cancellation and Refund Policy. Please refer to that
+                policy for information on refunds.
+                <br><br>
+                8. Changes to Software Shipping Policy:
+                <br>
+                - We reserve the right to modify this Software Shipping Policy at any time. Changes will be effective
+                upon posting on our website, and it is your responsibility to review this policy regularly.
+                <br><br>
+                9. Contact Us:
+                <br>
+                • If you have any questions or concerns about our Software Shipping Policy, please contact us at
+                ask@nirmaan360.com
+                <br><br>
+                Thank you for choosing Nirmaan360. We aim to provide you with a smooth and efficient experience in
+                accessing our cloud-based construction management services.
+                <br>
+                <br><br><br>
+            </p>
+
+        </header>
+
+    </section>
+    <app-footer [isHome]="false"></app-footer>
+</div>

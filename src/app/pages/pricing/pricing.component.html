@@ -1,0 +1,387 @@
+<div class="home-container">
+  <div class="home-hero">
+
+    <div class="home-menu">
+      <div id="mobile-menu" class="home-mobile-navigation" [style]="'transform : translateX('+isActive+'%);'">
+        <a routerLink="/" class="home-navlink">
+          <h1 style="color: #f93">Nirmaan 360</h1>
+        </a>
+
+        <div class="home-links">
+
+          <a routerLink="/solutions" class="home-navlink01 Link">
+            Solutions
+          </a>
+
+          <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+
+          <a (click)="showData()" class="home-navlink03 Link dropdown-toggle">More</a>
+          <a *ngIf="clickMore" routerLink="/how-it-works" class="home-navlink02 Link">
+            How it works
+          </a>
+          <a *ngIf="clickMore" routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a>
+          <a *ngIf="clickMore" routerLink="/legal" class="home-navlink03 Link">Legal</a>
+          <a routerLink="/get-started" class="home-navlink03 Link">Sign Up</a>
+          <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink03" style="color: #f93">
+            Log In
+          </a>
+        </div>
+        <div id="close-mobile-menu" class="home-close-mobile-menu" (click)="closeMenu()">
+          <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+            <path
+              d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <div class="home-desktop-navigation">
+        <nav class="home-centered">
+          <div class="home-left">
+            <div class="home-container1">
+              <a routerLink="/" class="home-navlink">
+                <img alt="image" src="/assets/nirmaan%20360caviar%20dreams%20white-01-200h1.png" class="home-image" />
+              </a>
+            </div>
+            <div class="home-links1">
+              <div class=" dropdown">
+                <a routerLink="/solutions" style="text-decoration: none;">
+                  <span routerLink="/solutions" class="home-navlink03 Link nav-link dropdown-toggle"
+                    id="dropdownMenuButton">Solutions</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" routerLink="/inventory"><b>Material Management</b></a>
+                  </li>
+                  <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management</b></a></li>
+                  <li><a class="dropdown-item" routerLink="/labour"><b>Labour Management</b></a></li>
+
+                  <li><a class="dropdown-item" routerLink="/daily-reports"><b>Daily Reports</b></a>
+                  </li>
+
+                  <li><a class="dropdown-item" routerLink="/payment-handling"><b>Payment
+                        Handling</b></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <a routerLink="/how-it-works" class="home-navlink02 Link">
+                How it works
+              </a> -->
+              <a routerLink="/pricing" class="home-navlink03 Link">Pricing</a>
+              <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
+
+              <div class=" dropdown">
+                <a class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton1">
+                  <span>More</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/how-it-works"><b>How it
+                        Works</b></a></li>
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/tutorials"><b>Tutorials</b></a></li>
+                  <li><a class="dropdown-item pt-2 pb-2" routerLink="/legal"><b>Legal</b></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="home-right">
+            <a routerLink="/get-started" class="home-sign-in Link">Sign Up</a>
+            <a href="https://app.nirmaan360.com" target="_blank" class="home-navlink04">
+              <div class="home-get-started">
+                <span class="home-text03">Log In</span>
+              </div>
+            </a>
+            <a id="open-mobile-menu" class="home-burger-menu" (click)="openMenu()">
+              <img alt="pastedImage" src="/assets/pastedimage-yxbd.svg" class="home-mobile-menu-button" />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+    <section class="home-header">
+      <header class="pricing-header">
+        <h1 class="pricing-text01">Pricing</h1>
+        <p class="pricing-text02">
+          Revolutionize your construction business with Nirmaan360
+        </p>
+      </header>
+      <a routerLink="/get-started" class="pricing-navlink5">
+        <div class="pricing-get-started1">
+          <span class="pricing-text03">Get started</span>
+        </div>
+      </a>
+    </section>
+  </div>
+  <section class="pricing-pricing">
+    <div class="pricing-centered-container">
+      <div class="pricing-heading">
+        <span class="pricing-text04 title">
+          Pricing for all kind of businesses
+        </span>
+        <!-- <span class="pricing-text05">
+          Create next-generation solutions for small business customers with
+          pricing options that accommodate everyone.
+        </span> -->
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <span class="pricing-text06 fs-1">Free</span>
+          <span class="pricing-text07 fs-5">
+            For individuals/small teams who wants to try out Nirmaan360&apos;s
+            core features.
+          </span>
+          <a routerLink="/get-started" class="pricing-navlink6">
+            <div class="pricing-get-started2 template-button">
+              <span class="pricing-text08">Start for free</span>
+            </div>
+          </a>
+          <span class="pricing-text09 fs-3">What&apos;s included?</span>
+          <div class="pricing-bullet-points ">
+            <div class="pricing-point">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text10 fs-5">
+                Access to 1 project
+              </span>
+            </div>
+            <div class="pricing-point01">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon02">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text11 fs-5">
+                Access to single-user
+              </span>
+            </div>
+          </div>
+          <div class="pricing-bullet-points1">
+            <div class="pricing-point02">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon04">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text12 fs-5">Full Module Access with
+                minimal limitation
+              </span>
+            </div>
+            <div class="pricing-point01">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon02">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text11 fs-5">
+                Customer Support
+              </span>
+            </div>
+
+
+          </div>
+          <div class="pricing-bullet-points">
+            <div class="pricing-point">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text10 fs-5">
+                Email limitation
+              </span>
+            </div>
+            <div class="pricing-point01">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon02">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text11 fs-5">
+                One on One chat with
+                founders office
+              </span>
+            </div>
+
+            <div class="pricing-point01">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon02">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text11 fs-5">
+                Export limitation
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-card2">
+          <span class="pricing-text25 fs-1">Premium</span>
+          <span class="pricing-text26 fs-5">
+            For companies looking to size up their operations by controlling
+            projects and personnel on a large scale.
+          </span>
+          <a routerLink="/get-started" class="pricing-link">
+            <div class="pricing-get-started4 template-button">
+              <span class="pricing-text27">
+                <span>Rs. 4250/month</span>
+                <br />
+              </span>
+            </div>
+          </a>
+          <span class="pricing-text09_White fs-3">What&apos;s included?</span>
+          <div class="pricing-bullet-points">
+            <div class="pricing-point01">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon02">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text30 fs-5">
+                Unlimited Projects
+              </span>
+            </div>
+          </div>
+          <div class="pricing-bullet-points4">
+            <div class="pricing-point09">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon18">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text30 fs-5">
+                Unlimited Vendor/User
+                onboarding.
+              </span>
+            </div>
+          </div>
+          <div class="pricing-bullet-points4">
+            <div class="pricing-point09">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon18">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text30 fs-5">
+                Implementation by
+                Nirmaan360 team.
+              </span>
+            </div>
+          </div>
+          <div class="pricing-bullet-points4">
+            <div class="pricing-point09">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon18">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text30 fs-5">
+                Email and Exporting features
+                enabled.
+              </span>
+            </div>
+            <div class="pricing-point09">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon18">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text30 fs-5">
+                Permissions Management
+              </span>
+            </div>
+            <div class="pricing-point09">
+              <svg viewBox="0 0 877.7142857142857 1024" class="pricing-icon18">
+                <path
+                  d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
+                </path>
+              </svg>
+              <span class="pricing-text30 fs-5">
+                8 hours of Training on
+                demand.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pricing-container2">
+    <div class="container">
+      <div class="pricing-heading1">
+        <span class="pricing-text31 title">Frequently asked questions</span>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-accordion-item">
+          <button id="faq-accordion-button-1" [attr.aria-expanded]="allAccordian[0]" (click)="operateAccordian(0)"><span
+              class="faq-accordion-title ">— Is the fee per user or for the whole company?
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="faq-accordion-content">
+            <p>The fee listed on the website is the fee for the company as a
+              whole. Any current promotion will be automatically factored into
+              the price.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button id="faq-accordion-button-2" [attr.aria-expanded]="allAccordian[1]" (click)="operateAccordian(1)"><span
+              class="faq-accordion-title">— Can I schedule a demo meeting to see how it works?</span><span class="icon"
+              aria-hidden="true"></span></button>
+          <div class="faq-accordion-content">
+            <p><a href="https://calendly.com/nirmaan360/30min" target="_blank" rel="noreferrer noopener"
+                class="pricing-link1">
+                <span>
+                  Scheduling a demo meeting with us is a great way to see how easy
+                  it is to use the system and to make sure it will meet your
+                  needs. During this time you’ll be able to ask us any questions
+                  and see it in action. Schedule your demo here: 
+                </span>
+                <span class="pricing-text36 ScheduleDemo">
+                  https://calendly.com/nirmaan360/30min
+                </span>
+                <br />
+              </a></p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button id="faq-accordion-button-3" [attr.aria-expanded]="allAccordian[2]" (click)="operateAccordian(2)"><span
+              class="faq-accordion-title">— Which devices does this work on?</span><span class="icon"
+              aria-hidden="true"></span></button>
+          <div class="faq-accordion-content">
+            <p>Nirmaan360 is web based as of now. The web panel can be used on
+              any device that has a web browser. We support Firefox and Chrome.
+              Safari and Edge are not recommended but they normally work without
+              issue. If you are using one of those and do have an issue, try a
+              different browser.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button id="faq-accordion-button-4" [attr.aria-expanded]="allAccordian[3]" (click)="operateAccordian(3)"><span
+              class="faq-accordion-title">— How secure is my data?</span><span class="icon"
+              aria-hidden="true"></span></button>
+          <div class="faq-accordion-content">
+            <p>Nirmaan360 works in the cloud on Microsoft Azure. Do not
+              share your credentials – instead, give your employees their own
+              account.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button id="faq-accordion-button-5" [attr.aria-expanded]="allAccordian[4]" (click)="operateAccordian(4)"><span
+              class="faq-accordion-title">— When am i charged and how do I cancel?</span><span class="icon"
+              aria-hidden="true"></span></button>
+          <div class="faq-accordion-content">
+            <p>You are only charged at the end of the quarter or at the end of
+              the year based on your plan. To cancel, your COMPANY ADMIN will
+              need to do so before your upcoming renewal through your account
+              here by submitting the cancellation form (Profile Settings &gt;
+              Cancel Subscription). Or simply you can call/email us on
+              +91-9426255832 or hsk@nirmaan360.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="pricing-container5"><app-footer [isHome]="false"></app-footer></div>
+</div>
