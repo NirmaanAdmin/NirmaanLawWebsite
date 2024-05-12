@@ -3,22 +3,18 @@
     <div class="home-menu">
       <div id="mobile-menu" class="home-mobile-navigation" [style]="'transform : translateX('+isActive+'%);'">
         <a routerLink="/" class="home-navlink">
-          <h1 style="color: #f93">Nirmaan 360</h1>
+          <h1 style="color: #f93">Nirmaan Law</h1>
         </a>
 
         <div class="home-links">
 
-          <a routerLink="/solutions" class="home-navlink01 Link">
+
+          <a routerLink="/solutions" class="home-navlink01 Link1">
             Solutions
           </a>
-
-
-
-          <a routerLink="/how-it-works" class="home-navlink01 Link">
+          <a routerLink="/how-it-works" class="home-navlink01 Link1">
             How it works
           </a>
-
-
           <a routerLink="/get-started" class="home-navlink03" style="color: #f93">
             Book a Demo
           </a>
@@ -32,7 +28,7 @@
         </div>
       </div>
       <div class="home-desktop-navigation">
-        <nav class="home-centered">
+        <nav class="home-centered" style="background-color: black!important; ">
           <div class="home-left">
             <div class="home-container1">
               <a routerLink="/" class="home-navlink">
@@ -93,7 +89,7 @@
         align-items: center;
       ">
           <button
-            style="align-items: center !important;color: black; background: #ff9933; padding: 15px; padding-left: 30px; padding-right: 30px; border-radius: 15px; margin-top: 5px; margin-bottom: 10px; "
+            style="align-items: center !important;color: black; background: #fff; padding: 15px; padding-left: 30px; padding-right: 30px; border-radius: 15px; margin-top: 5px; margin-bottom: 10px; "
             (click)="closeDialog()">Close</button>
         </div>
 
@@ -126,19 +122,12 @@
             name="Company Name" id='Company Name' required />
           <label for="Company Name" class="form__label">Company Name*</label>
         </div>
-        <div class="form__group field">
-          <select required class="form__field" [(ngModel)]="selectedPlan" placeholder="Select Plan" name="dropdown_Plan"
-            id='dropdown_Plan'>
-            <option value="Free">Free Plan</option>
-            <option value="95252D31-1EA3-4DF8-BAC4-A8CD13DA9D83">Semi-Annual Plan</option>
-            <option value="AEE6B77E-6E8B-4455-A5B8-C617F65D969E">Annual Plan</option>
-          </select>
-        </div>
+
 
         <div class="form__group field">
           <button (click)="validateForm()" class="get-started-navlink3" style="padding-top: 20px!important;">
             <span class="get-started-get-started">
-              <span class="get-started-text01">Experience Nirmaan360</span>
+              <span class="get-started-text01">Book a demo</span>
             </span>
           </button>
         </div>
@@ -169,7 +158,7 @@
 
         <a href="https://calendly.com/nirmaan360/30min?month=2024-03" class="home-navlink11"
           style="align-items: center;">
-          <div class="home-get-started5 template-button">
+          <div class="home-get-started5 template-button" style="background-color: #fff; color: #000;">
             <span class="home-text37" style="flex:1; display: flex;">
 
               <span>Book Now &nbsp;</span>

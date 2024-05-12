@@ -18,7 +18,7 @@
     padding-left: var(--dl-space-space-sevenunits);
     padding-right: var(--dl-space-space-sevenunits);
     flex-direction: column;
-    background-color: #FF9933;
+    background-color: #fff;
   }
   .home-menu {
     width: 100%;
@@ -153,28 +153,30 @@
   .home-navlink04 {
     display: contents;
   }
-  .home-get-started {
-    cursor: pointer;
-    display: flex;
-    transition: 0.3s;
-    align-items: center;
-    padding-top: var(--dl-space-space-unit);
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    border-radius: 56px;
-    padding-right: var(--dl-space-space-oneandhalfunits);
-    flex-direction: column;
-    padding-bottom: var(--dl-space-space-unit);
-    text-decoration: none;
-    background-color: #000000;
-  }
-  .home-get-started:hover {
-    background-color: #5228F5;
-  }
-  .home-text03 {
-    color: rgb(255, 255, 255);
-    font-style: normal;
-    font-weight: 600;
-  }
+.home-get-started {
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 56px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #fff;
+  
+  color: #000;
+}
+.home-get-started:hover {
+  background-color: #5228F5;
+  color: #fff!important;
+}
+.home-text03 {
+  font-style: normal;
+  font-weight: 600;
+}
   .home-burger-menu {
     display: flex;
     align-items: center;
@@ -249,7 +251,7 @@
     border-width: 30px;
     border-radius: 100px;
     flex-direction: column;
-    background-color: #FF9933;
+    background-color: #fff;
   }
   .home-outline {
     display: flex;
@@ -258,7 +260,7 @@
     border-width: 20px;
     border-radius: 70px;
     flex-direction: column;
-    background-color: #FF9933;
+    background-color: #fff;
   }
   .home-image1 {
     width: 900px;
@@ -276,7 +278,7 @@
     padding-left: var(--dl-space-space-sevenunits);
     padding-right: var(--dl-space-space-sevenunits);
     flex-direction: column;
-    background-color: #FF9933;
+    background-color: #fff;
   }
   .home-title {
     display: flex;
@@ -839,7 +841,7 @@
       height: 620px;
       position: relative;
       padding-bottom: 180px;
-      background-color: #ff9933;
+      background-color: #fff;
     }
     .home-desktop-navigation {
       padding-left: 0px;
@@ -1058,7 +1060,7 @@
   @media(max-width: 479px) {
     .home-hero {
       padding-bottom: 160px;
-      background-color: #ff9933;
+      background-color: #fff;
     }
     .home-logo {
       margin-left: 0px;

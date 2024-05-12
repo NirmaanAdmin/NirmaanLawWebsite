@@ -3,22 +3,17 @@
     <div class="home-menu">
       <div id="mobile-menu" class="home-mobile-navigation" [style]="'transform : translateX('+isActive+'%);'">
         <a routerLink="/" class="home-navlink">
-          <h1 style="color: #f93">Nirmaan 360</h1>
+          <h1 style="color: #f93">Nirmaan Law</h1>
         </a>
 
         <div class="home-links">
 
-          <a routerLink="/solutions" class="home-navlink01 Link">
+          <a routerLink="/solutions" class="home-navlink01 Link1">
             Solutions
           </a>
-
-
-
-          <a routerLink="/how-it-works" class="home-navlink01 Link">
+          <a routerLink="/how-it-works" class="home-navlink01 Link1">
             How it works
           </a>
-
-
           <a routerLink="/get-started" class="home-navlink03" style="color: #f93">
             Book a Demo
           </a>
@@ -32,7 +27,7 @@
         </div>
       </div>
       <div class="home-desktop-navigation">
-        <nav class="home-centered">
+        <nav class="home-centered" style="background-color: black!important; ">
           <div class="home-left">
             <div class="home-container1">
               <a routerLink="/" class="home-navlink">
@@ -83,18 +78,13 @@
         </div>
       </a>
       <br>
-      <iframe width="100%" height="256" src="https://www.youtube.com/embed/2NKVEAcV-DE?si=T9aeg3j1pphAl5Ww"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
 
     </section>
   </div>
   <section class="how-it-works-how-it-works">
     <div class="how-it-works-centered-container">
       <div class="how-it-works-heading">
-        <span class="how-it-works-text05 title">
-          Managing Construction Projects has never been this easier
+        <span class="how-it-works-text05 title">Managing Cases has never been this easier
         </span>
       </div>
       <div class="how-it-works-category">
@@ -105,13 +95,11 @@
           </span>
           <span class="how-it-works-text07">
             <span class="how-it-works-text08">
-              You will receive an email ID and Password to sign in the platform
-              from 
+              Book a Demo and schedule a meeting with us to review the capabilities of the software and if it fits your
+              needs.
+
             </span>
-            <span class="how-it-works-text09">
-              Nirmaan360&apos;s backend team after you sign up either for a
-              demo/paid version/enterprise version.
-            </span>
+
             <br />
           </span>
           <div class="how-it-works-get-started2 template-button">
@@ -127,23 +115,21 @@
       <div class="how-it-works-row">
         <div class="how-it-works-category1">
           <div class="how-it-works-headng2">
-            <span class="how-it-works-text12">2 — Create a Project</span>
+            <span class="how-it-works-text12">2 — Implementation Process</span>
             <span class="how-it-works-text13">
-              Sign in to the platform and explore the demo project. After
-              understanding basic functioning of the platform - Create your Own
-              Project(s) and Add Stakeholders (under Project Contacts module)
-              with whom you want to contribute in the project.
+              We will help you setup the Nirmaan Law software on your domain and white label it as per your company name
+              and email details.
+
             </span>
           </div>
           <img alt="pastedImage" src="/assets/analysis with padding-01-01.png" class="how-it-works-pasted-image2" />
         </div>
         <div class="how-it-works-category2">
           <div class="how-it-works-headng2">
-            <span class="how-it-works-text14">3 — Explore Features</span>
+            <span class="how-it-works-text14">3 — Training and Feature Exploration
+            </span>
             <span class="how-it-works-text15">
-              After creating projects and adding stakeholders collaborate
-              seamlessly with them by using tools like Task Management, Inventory Control, Daily Progress Reporting,
-              Labour Management, and Payment Tracking.
+              The software has been designed to be understood by everyone but we do provide one free demo on demand.
             </span>
           </div>
           <img alt="pastedImage" src="/assets/crop.png" class="how-it-works-pasted-image2" />
@@ -158,48 +144,33 @@
     </h1>
     <span class="how-it-works-text19">
       <span>
-        Nirmaan360 is an all-in-one construction management suite for your
-        tablet, phone or computer. With plans starting at 
-      </span>
-      <span class="how-it-works-text21">₹</span>
-      <span><span [innerHTML]="rawfl3r"></span></span>
-      <span class="how-it-works-text23">4250/month</span>
-      <span>
-        , it is the most affordable management software for real estate
-        stakeholders.
+
+        Nirmaan Law offers an all-in-one advocate management suite, accessible on your tablet, phone, or computer,
+        providing comprehensive solutions for legal professionals. From client management to case tracking, streamline
+        your legal practice with ease, anytime, anywhere.
+
       </span>
     </span>
     <div class="how-it-works-container3">
-      <feature-card32 title="Project Files" action="Central Repository to store everything for easy access"
-        rootClassName="rootClassName6" class="how-it-works-component" cardId="project-files"></feature-card32>
-      <feature-card32 title="Manage Tasks" action="Manage all coordination related steps in your project"
-        rootClassName="rootClassName7" cardId="manage-tasks"></feature-card32>
-      <feature-card32 title="Site Photos" action="Capture construction site's progress in a snap."
-        rootClassName="rootClassName8" cardId="site-photos"></feature-card32>
-      <feature-card32 title="Plans" action="Work with most up-to-date design plans from anywhere."
+      <feature-card32 title="Case Management" action="Comprehensive case management with intuitive tools, collaboration for efficiency.
+      " rootClassName="rootClassName6" class="how-it-works-component" cardId="project-files"></feature-card32>
+      <feature-card32 title="Appointment Handling" action="Simplified scheduling, manage court dates, events, and meetings efficiently.
+      " rootClassName="rootClassName7" cardId="manage-tasks"></feature-card32>
+      <feature-card32 title="Task Management" action="Seamless task organization, assignments, and tracking for better collaboration.
+
+      " rootClassName="rootClassName8" cardId="site-photos"></feature-card32>
+      <feature-card32 title="Human Resources"
+        action="Simplify HR, attendance, and payroll for smooth operations and compliance."
         rootClassName="rootClassName9" cardId="plans"></feature-card32>
-      <feature-card32 title="Scheduling"
-        action="Keeps the project on track in a real-time, shared scheduling ecosystem." rootClassName="rootClassName10"
-        cardId="scheduling"></feature-card32>
-      <feature-card32 title="Daily Reports"
-        action="Create a detailed archive of a project’s progress without relying on memory."
-        rootClassName="rootClassName11" cardId="daily-reports"></feature-card32>
-      <feature-card32 title="Chats" action="Elevate teamwork effortlessly with our Chats tool"
-        rootClassName="rootClassName12" cardId="chats"></feature-card32>
-      <feature-card32 title="Petty Cash"
-        action="Get a clear overview of your spending patterns with detailed breakdowns" rootClassName="rootClassName13"
-        cardId="expense"></feature-card32>
-      <feature-card32 title="Inventory"
-        action="Keep track of materials efficiently, ensuring smooth operations and cost control."
-        rootClassName="rootClassName14" cardId="inventory"></feature-card32>
-      <feature-card32 title="Payments"
-        action="Efficiently track receivables, payables, allocate barter, and set reminders."
-        rootClassName="rootClassName15" cardId="payments"></feature-card32>
-      <feature-card32 title="Labour"
-        action="From clock-in to paycheck, labour attendance simplifies tracking, ensuring efficiency in project management."
-        rootClassName="rootClassName16" cardId="labour"></feature-card32>
-      <feature-card32 title="Enquiries" action="Capture leads, schedule follow-ups for property purchases efficiently."
-        rootClassName="rootClassName17" cardId="enquiries"></feature-card32>
+      <feature-card32 title="Leave Management" action="Streamline leave management, simplify tracking, ensure smooth operations.
+        " rootClassName="rootClassName10" cardId="scheduling"></feature-card32>
+      <feature-card32 title="Access Control" action="Granular access control ensures security, compliance, custom roles, permissions.
+        " rootClassName="rootClassName11" cardId="daily-reports"></feature-card32>
+
+      <feature-card32 title="Reports & Analytics"
+        action=" Powerful tools for data management, analysis, and seamless exporting." rootClassName="rootClassName12"
+        cardId="chats"></feature-card32>
+
     </div>
   </div>
   <app-footer [isHome]="false"></app-footer>

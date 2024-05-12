@@ -1,9 +1,13 @@
 :host { 
   display: contents; 
 }
-.Link{
+ .Link{
   text-decoration: none !important;
-  color: #000000;
+  color: #fff;
+}
+.Link1{
+ text-decoration: none !important;
+ color: #000;
 }
 .container {
   margin: 0 auto;
@@ -33,7 +37,7 @@
   .faq-accordion-item {
     border-bottom: 1px solid #e5e5e5;
     button[aria-expanded='true'] {
-      border-bottom: 1px solid #FF9933;
+      border-bottom: 1px solid #fff;
     }
   }
   button {
@@ -50,11 +54,11 @@
     outline: none;
     &:hover, &:focus {
       cursor: pointer;
-      color: #FF9933;
+      color: #fff;
       &::after {
         cursor: pointer;
-        color: #FF9933;
-        border: 1px solid #FF9933;
+        color: #fff;
+        border: 1px solid #fff;
       }
     }
     .faq-accordion-title {
@@ -93,7 +97,7 @@
     }
   }
   button[aria-expanded='true'] {
-    color: #FF9933;
+    color: #fff;
     .icon {
       &::after {
         width: 0;
@@ -139,7 +143,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-sixunits);
   justify-content: center;
-  background-color: #ff9933;
+  background-color: #fff;
 }
 .pricing-centered {
   width: 100%;
@@ -258,7 +262,7 @@
   padding-left: var(--dl-space-space-sevenunits);
   padding-right: var(--dl-space-space-sevenunits);
   flex-direction: column;
-  background-color: #FF9933;
+  background-color: #fff;
 }
 .pricing-header {
   display: flex;
@@ -953,7 +957,7 @@
     height: 620px;
     position: relative;
     padding-bottom: 180px;
-    background-color: #ff9933;
+    background-color: #fff;
   }
   .pricing-header {
     height: 100%;
@@ -1026,7 +1030,7 @@
   }
   .pricing-hero {
     width: 430px;
-    border-color: #FF9933;
+    border-color: #fff;
     border-width: 1px;
     padding-bottom: 160px;
     background-color: transparent;
@@ -1078,7 +1082,7 @@
   padding-left: var(--dl-space-space-sevenunits);
   padding-right: var(--dl-space-space-sevenunits);
   flex-direction: column;
-  background-color: #FF9933;
+  background-color: #fff;
 }
 .home-menu {
   width: 100%;
@@ -1226,13 +1230,14 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
-  background-color: #000000;
+  background-color: #fff;
 }
 .home-get-started:hover {
   background-color: #5228F5;
+  color: #fff;
 }
 .home-text03 {
-  color: rgb(255, 255, 255);
+  color: #000;
   font-style: normal;
   font-weight: 600;
 }
@@ -1310,7 +1315,7 @@
   border-width: 30px;
   border-radius: 100px;
   flex-direction: column;
-  background-color: #FF9933;
+  background-color: #fff;
 }
 .home-outline {
   display: flex;
@@ -1319,7 +1324,7 @@
   border-width: 20px;
   border-radius: 70px;
   flex-direction: column;
-  background-color: #FF9933;
+  background-color: #fff;
 }
 .home-image1 {
   width: 900px;
@@ -1337,7 +1342,7 @@
   padding-left: var(--dl-space-space-sevenunits);
   padding-right: var(--dl-space-space-sevenunits);
   flex-direction: column;
-  background-color: #FF9933;
+  background-color: #fff;
 }
 .home-title {
   display: flex;
@@ -1908,7 +1913,7 @@
     height: 620px;
     position: relative;
     padding-bottom: 180px;
-    background-color: #ff9933;
+    background-color: #fff;
   }
   .home-desktop-navigation {
     padding-left: 0px;
@@ -2131,7 +2136,7 @@
   }
   .home-hero {
     padding-bottom: 160px;
-    background-color: #ff9933;
+    background-color: #fff;
   }
   .home-logo {
     margin-left: 0px;

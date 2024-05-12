@@ -80,37 +80,22 @@ export class GetStarted {
       membershipKey: (!this.selectedMembership || this.selectedPlan == "Free") ? null : this.selectedMembership,
       transactionInfo: null,
     }
-    if (this.selectedPlan == "Free") {
-      this.isLoading = true;
-      this.selectedPlan = null;
-      this.selectedMembership = null;
-      this.razorpayService.registerBody = { ...body };
-      this.razorpayService.register().subscribe((res) => {
-        this.isLoading = false;
-        this.openDialog()
+    this.isLoading = true;
+    this.selectedPlan = null;
+    this.selectedMembership = null;
+    this.razorpayService.registerBody = { ...body };
+    this.razorpayService.register().subscribe((res) => {
+      this.isLoading = false;
+      this.openDialog()
 
-      });
-    }
-    else {
-      if (this.selectedPlan == "95252D31-1EA3-4DF8-BAC4-A8CD13DA9D83") {
-        //this is in Paisa
-        this.amount = 3000000
-      }
+    });
 
-      if (this.selectedPlan == "AEE6B77E-6E8B-4455-A5B8-C617F65D969E") {
-        //this is in Paisa
-        this.amount = 5100000
-
-      }
-
-      this.razorpayService.initializeRazorpay(body, this.amount);
-    }
 
     // this.firstName = null;
     // this.lastName = null;
     // this.emailAddress = null;
     // this.phoneNumber = null;
-    // this.companyName = null;
+    // this.companyName = null;s
     // this.selectedPlan = "Free";
   }
 }
