@@ -21,11 +21,11 @@ export class GetStarted {
   amount: number = 0;
   isLoading: boolean = false;
   constructor(private title: Title, private meta: Meta, private razorpayService: RazorpayService) {
-    this.title.setTitle('Get-Started - Nirmaan360')
+    this.title.setTitle('Get-Started - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Get-Started - Nirmaan360',
+        content: 'Get-Started - Nirmaan Law',
       },
     ])
   }

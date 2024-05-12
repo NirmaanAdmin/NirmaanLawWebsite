@@ -14,7 +14,7 @@ export class LegalComponent implements OnInit {
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Legal - Nirmaan360',
+        content: 'Legal - Nirmaan Law',
       },
     ])
   }

@@ -1,20 +1,20 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-task-management',
-  templateUrl: './task-management.component.html',
-  styleUrls: ['./task-management.component.css']
+  selector: 'app-case-management',
+  templateUrl: './case-management.component.html',
+  styleUrls: ['./case-management.component.css']
 })
-export class TaskManagementComponent implements OnInit {
+export class CaseManagementComponent implements OnInit {
   constructor(private title: Title,
     private router: Router, private meta: Meta, private route: ActivatedRoute, private renderer: Renderer2, private el: ElementRef) {
-    this.title.setTitle('Task Management - Nirmaan Law')
+    this.title.setTitle('Case Management - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Task Management - Nirmaan Law',
+        content: 'Case Management - Nirmaan Law',
       },
     ])
   }

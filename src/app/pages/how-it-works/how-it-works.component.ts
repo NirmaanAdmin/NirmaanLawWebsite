@@ -10,11 +10,11 @@ export class HowItWorks {
   rawiw22: string = ' '
   rawfl3r: string = ' '
   constructor(private title: Title, private meta: Meta) {
-    this.title.setTitle('How-it-works - Nirmaan360')
+    this.title.setTitle('How-it-works - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'How-it-works - Nirmaan360',
+        content: 'How-it-works - Nirmaan Law',
       },
     ])
   }

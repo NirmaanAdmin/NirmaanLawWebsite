@@ -48,11 +48,11 @@ export class Solutions {
   rawg2j2: string = ' '
 
   constructor(private title: Title, private meta: Meta, private route: ActivatedRoute, private renderer: Renderer2, private el: ElementRef) {
-    this.title.setTitle('Solutions - Nirmaan360')
+    this.title.setTitle('Solutions - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Solutions - Nirmaan360',
+        content: 'Solutions - Nirmaan Law',
       },
     ])
   }

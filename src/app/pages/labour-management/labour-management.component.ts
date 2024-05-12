@@ -10,11 +10,11 @@ import { ActivatedRoute } from '@angular/router';
 export class LabourManagementComponent implements OnInit {
 
   constructor(private title: Title, private meta: Meta, private route: ActivatedRoute, private renderer: Renderer2, private el: ElementRef) {
-    this.title.setTitle('Labour - Nirmaan360')
+    this.title.setTitle('Labour - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Labour - Nirmaan360',
+        content: 'Labour - Nirmaan Law',
       },
     ])
   }

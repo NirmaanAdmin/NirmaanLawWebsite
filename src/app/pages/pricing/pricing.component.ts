@@ -10,11 +10,11 @@ export class Pricing {
   rawl896: string = ' '
   raw2oom: string = ' '
   constructor(private title: Title, private meta: Meta) {
-    this.title.setTitle('Pricing - Nirmaan360')
+    this.title.setTitle('Pricing - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Pricing - Nirmaan360',
+        content: 'Pricing - Nirmaan Law',
       },
     ])
   }

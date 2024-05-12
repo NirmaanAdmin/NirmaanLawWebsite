@@ -10,11 +10,11 @@ import { ActivatedRoute } from '@angular/router';
 export class InventoryComponent implements OnInit {
 
   constructor(private title: Title, private meta: Meta, private route: ActivatedRoute, private renderer: Renderer2, private el: ElementRef) {
-    this.title.setTitle('Inventory - Nirmaan360')
+    this.title.setTitle('Inventory - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Inventory - Nirmaan360',
+        content: 'Inventory - Nirmaan Law',
       },
     ])
   }

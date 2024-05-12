@@ -45,9 +45,29 @@
 
               <!-- <a routerLink="/tutorials" class="home-navlink03 Link">Tutorials</a> -->
 
-              <a routerLink="/solutions" class="home-navlink02 Link">
-                Solutions
-              </a>
+              <div class=" dropdown">
+                <a routerLink="/solutions" style="text-decoration: none;">
+                  <span class="home-navlink03 Link nav-link dropdown-toggle" id="dropdownMenuButton">Solutions</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" routerLink="/case-management"><b>Case Management</b></a>
+                  </li>
+                  <li><a class="dropdown-item" routerLink="/event-handling"><b>Appointments and Events</b></a>
+                  </li>
+                  <li><a class="dropdown-item" routerLink="/tasks"><b>Tasks Management
+                      </b></a></li>
+
+                  <li><a class="dropdown-item" routerLink="/payment-handling"><b>HR and Payroll</b></a>
+                  </li>
+
+                  <li><a class="dropdown-item" routerLink="/leave-management"><b>Leave
+                        Management</b></a>
+                  </li>
+                  <li><a class="dropdown-item" routerLink="/permissions"><b>Permissions and
+                        Analytics</b></a>
+                  </li>
+                </ul>
+              </div>
               <a routerLink="/how-it-works" class="home-navlink02 Link">
                 How it works
               </a>
@@ -98,13 +118,13 @@
   <div class="home-banner-advanced-analytics" id="inventory">
     <div class="home-centered-container">
       <div class="home-image-container">
-        <a routerLink="/solutions" class="home-navlink08">
+        <a routerLink="/case-management" class="home-navlink08">
           <img alt="pastedImage" src="/assets/inventory1.png" class="home-cards-image1" />
         </a>
       </div>
       <div class="home-left1">
         <span class="home-text26 sub-title">
-          <a routerLink="/inventory" style="text-decoration: none;">Case Management
+          <a routerLink="/case-management" style="text-decoration: none;">Case Management
           </a>
         </span>
         <h2 class="home-text27 title">
@@ -117,10 +137,10 @@
           put up details. Collaborate seamlessly with your team, ensuring efficient case progression.
           <br>
           <br>
-          <!-- <a routerLink="/inventory" style="text-decoration: none; display: flex; align-items: center;">
+          <a routerLink="/case-management" style="text-decoration: none; display: flex; align-items: center;">
             <span style="margin-right: 5px;">Read more</span>
             <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
-          </a> -->
+          </a>
 
         </span>
 
@@ -131,7 +151,7 @@
     <div class="home-container8">
       <div class="home-left2">
         <span class="home-text31">
-          <a routerLink="/payment-handling" style="text-decoration: none;">Appointment and Event Handling
+          <a routerLink="/event-handling" style="text-decoration: none;">Appointment and Event Handling
           </a>
         </span>
         <h2 class="home-text32 title">Simplify Scheduling and Stay on Track
@@ -143,10 +163,10 @@
 
           <br>
           <br>
-          <!-- <a routerLink="/payment-handling" style="text-decoration: none; display: flex; align-items: center;">
+          <a routerLink="/event-handling" style="text-decoration: none; display: flex; align-items: center;">
             <span style="margin-right: 5px;">Read more</span>
             <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
-          </a> -->
+          </a>
 
         </span>
 
@@ -165,7 +185,7 @@
       </div>
       <div class="home-left1">
         <span class="home-text26 sub-title">
-          <a routerLink="/labour" style="text-decoration: none;">Manage Tasks
+          <a routerLink="/tasks" style="text-decoration: none;">Manage Tasks
           </a>
         </span>
         <h2 class="home-text27 title">
@@ -180,10 +200,10 @@
 
           <br>
           <br>
-          <!-- <a routerLink="/labour" style="text-decoration: none; display: flex; align-items: center;">
+          <a routerLink="/tasks" style="text-decoration: none; display: flex; align-items: center;">
             <span style="margin-right: 5px;">Read more</span>
             <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
-          </a> -->
+          </a>
 
         </span>
       </div>
@@ -193,7 +213,7 @@
     <div class="home-container8">
       <div class="home-left2">
         <span class="home-text31">
-          <a routerLink="/tasks" style="text-decoration: none;">HR and Payroll
+          <a routerLink="/payment-handling" style="text-decoration: none;">HR and Payroll
           </a>
         </span>
         <h2 class="home-text32 title">Streamlined HR and Payroll Management for Advocate Firms
@@ -206,10 +226,10 @@
 
           <br>
           <br>
-          <!-- <a routerLink="/tasks" style="text-decoration: none; display: flex; align-items: center;">
+          <a routerLink="/payment-handling" style="text-decoration: none; display: flex; align-items: center;">
             <span style="margin-right: 5px;">Read more</span>
             <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
-          </a> -->
+          </a>
         </span>
 
       </div>
@@ -227,7 +247,7 @@
       </div>
       <div class="home-left1">
         <span class="home-text26 sub-title">
-          <a routerLink="/daily-reports" style="text-decoration: none;">Leave Management
+          <a routerLink="/leave-management" style="text-decoration: none;">Leave Management
           </a>
         </span>
         <h2 class="home-text27 title">Effortless Leave Management for Advocate Firms
@@ -241,10 +261,10 @@
 
           <br>
           <br>
-          <!-- <a routerLink="/daily-reports" style="text-decoration: none; display: flex; align-items: center;">
+          <a routerLink="/leave-management" style="text-decoration: none; display: flex; align-items: center;">
             <span style="margin-right: 5px;">Read more</span>
             <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
-          </a> -->
+          </a>
         </span>
       </div>
     </div>
@@ -252,7 +272,7 @@
   <div class="home-banner" id="enquiries">
     <div class="home-container8">
       <div class="home-left2">
-        <span class="home-text31">
+        <span class="home-text31" routerLink="/permissions">
           Access Permission and Role Restrictions
 
         </span>
@@ -263,6 +283,12 @@
           Our Access Restriction and Role Permission feature provides granular control over user access, ensuring data
           security and compliance. Customize roles and permissions to restrict access to sensitive information and
           functionalities, protecting your firm's data.
+          <br>
+          <br>
+          <a routerLink="/permissions" style="text-decoration: none; display: flex; align-items: center;">
+            <span style="margin-right: 5px;">Read more</span>
+            <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
+          </a>
         </span>
 
       </div>
@@ -291,7 +317,12 @@
           Our Filtration, Reporting, and Exporting features offer powerful tools to manage, analyze, and export data
           effectively. Filter data, generate comprehensive reports, and export data seamlessly to optimize your firm's
           operations and decision-making processes.
-
+          <br>
+          <br>
+          <a style="text-decoration: none; display: flex; align-items: center;">
+            <span style="margin-right: 5px;">Read more</span>
+            <i class="material-symbols-outlined" style="margin-top: 3px;">trending_flat</i>
+          </a>
         </span>
       </div>
     </div>

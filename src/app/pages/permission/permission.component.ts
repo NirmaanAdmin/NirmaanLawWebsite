@@ -1,20 +1,21 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-task-management',
-  templateUrl: './task-management.component.html',
-  styleUrls: ['./task-management.component.css']
+  selector: 'app-permission',
+  templateUrl: './permission.component.html',
+  styleUrls: ['./permission.component.css']
 })
-export class TaskManagementComponent implements OnInit {
+export class PermissionComponent implements OnInit {
+
   constructor(private title: Title,
     private router: Router, private meta: Meta, private route: ActivatedRoute, private renderer: Renderer2, private el: ElementRef) {
-    this.title.setTitle('Task Management - Nirmaan Law')
+    this.title.setTitle('Permissions - Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Task Management - Nirmaan Law',
+        content: 'Permissions - Nirmaan Law',
       },
     ])
   }
@@ -30,6 +31,7 @@ export class TaskManagementComponent implements OnInit {
   closeMenu() {
     this.isActive = 100;
   }
+
   openMenu() {
     this.isActive = 0
   }
@@ -37,4 +39,5 @@ export class TaskManagementComponent implements OnInit {
   showData() {
     this.clickMore = !this.clickMore;
   }
+
 }

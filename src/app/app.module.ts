@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ComponentsModule } from './components/components.module'
 import { AppComponent } from './app.component';
+import { CaseManagementComponent } from './pages/case-management/case-management.component';
 // import { TutorialsComponent } from './pages/tutorials/tutorials.component'
 
 const routes = [
@@ -20,11 +21,7 @@ const routes = [
     loadChildren: () =>
       import('./pages/home/home.module').then((m) => m.HomeModule),
   },
-  {
-    path: 'pricing',
-    loadChildren: () =>
-      import('./pages/pricing/pricing.module').then((m) => m.PricingModule),
-  },
+
   {
     path: 'get-started',
     loadChildren: () =>
@@ -40,40 +37,35 @@ const routes = [
       ),
   },
   {
-    path: 'legal',
+    path: 'leave-management',
     loadChildren: () =>
-      import('./pages/legal/legal.module').then(
-        (m) => m.LegalModule
+      import('./pages/leave-management/leave-management.module').then(
+        (m) => m.LeaveManagementModule
+      ),
+  },
+
+  {
+    path: 'permissions',
+    loadChildren: () =>
+      import('./pages/permission/permission.module').then(
+        (m) => m.PermissionModule
       ),
   },
   {
-    path: 'tutorials',
+    path: 'case-management',
     loadChildren: () =>
-      import('./pages/tutorials/tutorials.module').then(
-        (m) => m.TutorialsModule
+      import('./pages/case-management/case-management.module').then(
+        (m) => m.CaseManagementModule
       ),
   },
   {
-    path: 'inventory',
+    path: 'event-handling',
     loadChildren: () =>
-      import('./pages/inventory/inventory.module').then(
-        (m) => m.InventoryModule
+      import('./pages/event-handling/event-handling.module').then(
+        (m) => m.EventHandlingModule
       ),
   },
-  {
-    path: 'labour',
-    loadChildren: () =>
-      import('./pages/labour-management/labour-management.module').then(
-        (m) => m.LabourManagementModule
-      ),
-  },
-  {
-    path: 'daily-reports',
-    loadChildren: () =>
-      import('./pages/daily-reports/daily-reports.module').then(
-        (m) => m.DailyReportsModule
-      ),
-  },
+
   {
     path: 'payment-handling',
     loadChildren: () =>

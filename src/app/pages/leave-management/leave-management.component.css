@@ -15,9 +15,18 @@
   display: flex;
   min-height: 100vh;
 } */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
 .dropdown-menu > li > a:hover {
   background-color: #5228F5; /* This doesn't... why? */
 }
+
 :host { 
     display: contents; 
   }
@@ -396,7 +405,7 @@
   .how-it-works-features {
     width: 100%;
     display: flex;
-    padding: var(--dl-space-space-threeunits);
+    padding: var(--dl-space-space-sevenunits);
     max-width: var(--dl-size-size-maxwidth);
     align-items: center;
     flex-direction: column;
@@ -767,7 +776,7 @@
   .home-navlink {
     display: contents;
   }
-  .home-image {
+    .home-image {
     width: 100%;
     height: 130px;
     object-fit: cover;
@@ -1797,12 +1806,3 @@
       visibility: hidden;
     }
   }
-  .dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-      pointer-events: none;
-  }
-  
