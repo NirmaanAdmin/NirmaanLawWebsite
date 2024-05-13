@@ -132,7 +132,7 @@
 }
   .home-image {
     width: 100%;
-    height: 130px;
+    height: 110px;
     object-fit: cover;
     text-decoration: none;
   }
@@ -758,8 +758,9 @@
 }
 @media(max-width: 991px) {
   .home-image {
-    margin-left: -36px;
-    height:93px;
+    margin-left: 0px;
+    height:63px;
+    width: 60px;
   }
   .home-hero {
     height: 1108px;
@@ -890,7 +891,7 @@
 }
 @media(max-width: 767px) {
   .home-image {
-    margin-left: -36px;
+    margin-left: 0px;
     
   }
   .home-hero {
@@ -1151,7 +1152,7 @@
 }
 @media(max-width: 479px) {
   .home-image {
-    margin-left: -36px!important;
+    margin-left:0px!important;
   }
   .home-hero {
     padding-bottom: 160px;

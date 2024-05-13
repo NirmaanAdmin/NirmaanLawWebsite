@@ -41,7 +41,7 @@ export class Footer {
   @Input()
   text611: string = 'How it works'
   @Input()
-  image_src: string = '/assets/nirmaan%20360caviar%20dreams%20white-01-200h.png'
+  image_src: string = '/assets/law_logo.png'
   @Input()
   text8: string = 'Site Photos'
   @Input()
