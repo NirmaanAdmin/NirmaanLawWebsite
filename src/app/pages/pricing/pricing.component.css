@@ -1775,10 +1775,13 @@
   }
 }
 @media(max-width: 991px) {
-  .home-image {
-    margin-left: 0px;
-    height:93px;
-  }
+    
+ .home-image {
+      margin-left: 0px;
+      height:63px;
+    width: 60px;
+    }
+
   .home-hero {
     height: 700px;
     padding-left: var(--dl-space-space-oneandhalfunits);
