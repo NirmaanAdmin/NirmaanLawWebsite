@@ -62,40 +62,19 @@ export class GetStarted {
   }
   validateForm() {
     if (this.firstName?.trim() != null && this.companyName?.trim() != null && this.selectedPlan?.trim() != null && this.selectedMembership?.trim() != null && this.validateEmailId(this.emailAddress.trim()) == true) {
-      this.makePayment();
+      window.open("https://calendly.com/nirmaan360/30min?month=2024-03", "_blank");
     }
     else {
       alert("Please Enter Correct Details.")
     }
   }
 
-  makePayment() {
-    let body = {
-      firstName: this.firstName,
-      lastName: this.lastName,
-      email: this.emailAddress,
-      phoneNumber: this.phoneNumber,
-      companyName: this.companyName,
-      licenseKey: this.selectedPlan == "Free" ? null : this.selectedPlan,
-      membershipKey: (!this.selectedMembership || this.selectedPlan == "Free") ? null : this.selectedMembership,
-      transactionInfo: null,
-    }
-    this.isLoading = true;
-    this.selectedPlan = null;
-    this.selectedMembership = null;
-    this.razorpayService.registerBody = { ...body };
-    this.razorpayService.register().subscribe((res) => {
-      this.isLoading = false;
-      this.openDialog()
 
-    });
+  // this.firstName = null;
+  // this.lastName = null;
+  // this.emailAddress = null;
+  // this.phoneNumber = null;
+  // this.companyName = null;s
+  // this.selectedPlan = "Free";
 
-
-    // this.firstName = null;
-    // this.lastName = null;
-    // this.emailAddress = null;
-    // this.phoneNumber = null;
-    // this.companyName = null;s
-    // this.selectedPlan = "Free";
-  }
 }
