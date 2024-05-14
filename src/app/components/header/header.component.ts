@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Nirmaan360',
+        content: 'Nirmaan Law',
       },
     ])
   }

@@ -268,7 +268,7 @@
   position: absolute;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   align-items: center;
-  border-color: #3a0cf5;
+  border-color: #000;
   border-width: 30px;
   border-radius: 100px;
   flex-direction: column;
@@ -277,7 +277,7 @@
 .home-outline {
   display: flex;
   align-items: center;
-  border-color: #7350f7;
+  border-color: gray;
   border-width: 20px;
   border-radius: 70px;
   flex-direction: column;

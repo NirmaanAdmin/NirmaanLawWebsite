@@ -12,11 +12,11 @@ export class Home implements OnInit {
   }
   rawudih: string = ' '
   constructor(private title: Title, private meta: Meta) {
-    this.title.setTitle('Nirmaan360')
+    this.title.setTitle('Nirmaan Law')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Nirmaan360',
+        content: 'Nirmaan Law',
       },
     ])
   }

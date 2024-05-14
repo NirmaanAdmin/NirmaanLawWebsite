@@ -18,10 +18,10 @@ export class Footer1 {
   @Input()
   imagealt: string = 'image'
   @Input()
-  text: string = 'Copyright © Nirmaan360 - 2023'
+  text: string = 'Copyright © Nirmaan Law - 2023'
   @Input()
   text3: string = 'Subscribe'
   @Input()
   text2: string = 'Contact'
-  constructor() {}
+  constructor() { }
 }
