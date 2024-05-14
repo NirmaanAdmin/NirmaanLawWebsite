@@ -240,7 +240,7 @@
   height: 100%;
   display: flex;
   max-width: 1200px;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   flex-direction: column;
   justify-content: space-between;
 }
