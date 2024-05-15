@@ -58,11 +58,44 @@ export class GetStarted {
   }
 
   closeDialog() {
+    this.firstName = null;
+    this.lastName = null;
+    this.emailAddress = null;
+    this.phoneNumber = null;
+    this.companyName = null;
     this.customDialog.nativeElement.close();
   }
   validateForm() {
     if (this.firstName?.trim() != null && this.companyName?.trim() != null && this.selectedPlan?.trim() != null && this.selectedMembership?.trim() != null && this.validateEmailId(this.emailAddress.trim()) == true) {
       window.open("https://calendly.com/nirmaan360/30min?month=2024-03", "_blank");
+
+
+      let body = {
+        FirstName: this.firstName,
+        LastName: this.lastName,
+        Email: this.emailAddress,
+        PhoneNumber: this.phoneNumber,
+        CompanyName: this.companyName,
+        Regarding: "Law",
+        formDataNameOrder: JSON.stringify(["FirstName", "LastName", "Email", "PhoneNumber", "CompanyName", "Regarding"]),
+        formGoogleSheetName: "responses",
+        formGoogleSendEmail: "hsk@nirmaan360.com",
+      }
+      var url = "https://script.google.com/macros/s/AKfycbxzxfVMDYuk8aXvdoDzYiTmZkOXAe8bETGohUnCZch6ftNRBfxalfUbGllgFRknVlks/exec";
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      // xhr.withCredentials = true;
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+        }
+      };
+      // url encode form data for sending as post data
+      var encoded = Object.keys(body).map(function (k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(body[k]);
+      }).join('&');
+      xhr.send(encoded);
+      this.openDialog();
     }
     else {
       alert("Please Enter Correct Details.")
