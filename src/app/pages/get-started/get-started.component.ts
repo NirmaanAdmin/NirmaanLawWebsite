@@ -81,33 +81,37 @@ export class GetStarted {
         formGoogleSheetName: "responses",
         formGoogleSendEmail: "hsk@nirmaan360.com",
       }
-      var url = "https://script.google.com/macros/s/AKfycbxzxfVMDYuk8aXvdoDzYiTmZkOXAe8bETGohUnCZch6ftNRBfxalfUbGllgFRknVlks/exec";
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', url);
-      // xhr.withCredentials = true;
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-        }
-      };
-      // url encode form data for sending as post data
-      var encoded = Object.keys(body).map(function (k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(body[k]);
-      }).join('&');
-      xhr.send(encoded);
+
+      let status = this.sendMail(body);
+
+      //After that, send feedback mail to user's email.
+      let body2 = {
+        "Message": "Thank you for reaching out Nirmaan Law. We will contact you shortly in under 24 hours.",
+        formDataNameOrder: JSON.stringify(["Message"]),
+        formGoogleSheetName: "responses",
+        formGoogleSendEmail: this.emailAddress,
+      }
+      this.sendMail(body2);
+
+
       this.openDialog();
     }
     else {
       alert("Please Enter Correct Details.")
     }
   }
-
-
-  // this.firstName = null;
-  // this.lastName = null;
-  // this.emailAddress = null;
-  // this.phoneNumber = null;
-  // this.companyName = null;s
-  // this.selectedPlan = "Free";
+  sendMail(body: any) {
+    var url = "https://script.google.com/macros/s/AKfycbxzxfVMDYuk8aXvdoDzYiTmZkOXAe8bETGohUnCZch6ftNRBfxalfUbGllgFRknVlks/exec";
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    // url encode form data for sending as post data
+    var encoded = Object.keys(body).map(function (k) {
+      return encodeURIComponent(k) + "=" + encodeURIComponent(body[k]);
+    }).join('&');
+    xhr.send(encoded);
+    return xhr.status;
+  }
 
 }
